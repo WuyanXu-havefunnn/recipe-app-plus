@@ -1,10 +1,32 @@
+import React from 'react'
 import styled from 'styled-components'
 import Nav from './Nav'
 
+const logoStartImage = 'littlehutlogo.svg'
+const logoEndImage = 'logohover.svg'
+
+const getImage = (filename) => `url('/images/${filename}')`
+
 export default function Header() {
+  const [logoSwitched, setLogoSwitched] = React.useState(false)
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setLogoSwitched(true)
+    }, 1000)
+  }, [])
+
   return (
     <Wrapper>
-      <LogoWrapper>
+      <LogoWrapper
+        style={{
+          '--background': logoSwitched
+            ? getImage(logoEndImage)
+            : getImage(logoStartImage),
+          '--width': logoSwitched ? '500px' : '300px',
+          '--height': logoSwitched ? '150px' : '70px',
+        }}
+      >
         <a href="index.html">
           <Logo />
         </a>
@@ -17,7 +39,7 @@ export default function Header() {
 
 const Wrapper = styled.header`
   background-color: #f5f5f5;
-  height: 220px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -28,6 +50,7 @@ const Wrapper = styled.header`
 
 const LogoWrapper = styled.div`
   display: flex;
+  padding-top: 40px;
 `
 
 const HutLogo = styled.div`
@@ -42,11 +65,12 @@ const HutLogo = styled.div`
 `
 
 const Logo = styled.div`
-  background-image: url('/images/littlehutlogo.svg');
+  background-image: var(--background);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 70px;
+  width: var(--width);
+  height: var(--height);
   cursor: pointer;
   margin-bottom: 5px;
+  transition: ease-out 150ms;
 `
