@@ -22,8 +22,8 @@ const Wrapper = styled.aside`
 
 const Tagline = styled.h3`
   font-family: 'Benne', serif;
-  font-size: 0.9rem;
-  margin: 40px 0 10px 0;
+  font-size: 1rem;
+  margin: 50px 0 10px 0;
   letter-spacing: 0.5px;
 `
 

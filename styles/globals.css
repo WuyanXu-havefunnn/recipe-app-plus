@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500&family=Benne&family=Gotu&family=Karla:wght@500&family=Mansalva&family=Maven+Pro:wght@600&family=Neucha&family=Quattrocento+Sans:wght@700&family=Tenali+Ramakrishna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500&family=Handlee&family=Benne&family=Gotu&family=Karla:wght@500&family=Mansalva&family=Maven+Pro:wght@600&family=Neucha&family=Quattrocento+Sans:wght@700&family=Tenali+Ramakrishna&display=swap');
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -15,4 +13,6 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

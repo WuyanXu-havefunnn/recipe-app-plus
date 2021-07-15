@@ -61,33 +61,26 @@ export default function CategoryPills() {
         <Tag colorScheme={colors.egg}>egg</Tag>
         <Tag colorScheme={colors.rice}>rice & noodles</Tag>
         <Tag colorScheme={colors.sweet}>sweety sweet things</Tag>
-        {/* <h4 class="sidebar-rc-5">healthy</h4>
-        <h4 class="sidebar-rc-6">seafood</h4>
-        <h4 class="sidebar-rc-7">pork</h4>
-        <h4 class="sidebar-rc-8">chicken</h4>
-        <h4 class="sidebar-rc-9">egg</h4>
-        <h4 class="sidebar-rc-10">rice & noodles</h4>
-        <h4 class="sidebar-rc-11">sweety sweet things</h4> */}
       </Categories>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.aside`
-  width: 150px;
+  width: 200px;
 `
 
 const Tagline = styled.h3`
   font-family: 'Benne', serif;
-  font-size: 0.9rem;
-  margin: 40px 0 10px 0;
+  font-size: 1rem;
+  margin: 50px 0 10px 0;
   letter-spacing: 0.5px;
 `
 
 const Categories = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
+  width: 200px;
 `
 
 const Tag = styled.h4`

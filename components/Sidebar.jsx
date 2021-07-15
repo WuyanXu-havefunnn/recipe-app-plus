@@ -7,7 +7,7 @@ export default function Sidebar() {
   return (
     <Wrapper>
       <AboutMe>
-        <NameLine>Hey there, I'm Wuyan</NameLine>
+        <NameLine>Hey there, I'm Wuyan ~</NameLine>
         <Avatar />
         <IntroContent>
           I love eating and cooking Chinese food at home. I find cooking to be
@@ -25,9 +25,6 @@ export default function Sidebar() {
 
 const Wrapper = styled.aside`
   width: 200px;
-  padding-left: 50px;
-  margin-right: 60px;
-  margin-top: 60px;
 `
 
 const AboutMe = styled.div`
@@ -47,13 +44,14 @@ const Avatar = styled.div`
 `
 
 const NameLine = styled.h3`
-  font-family: 'Mansalva', cursive;
+  font-family: 'Gotu', sans-serif;
+  letter-spacing: 0.3px;
   font-size: 1rem;
   margin-bottom: 15px;
 `
 
 const IntroContent = styled.p`
-  font-size: 0.6rem;
+  font-size: ${12 / 16}rem;
   font-family: 'Gotu', sans-serif;
   margin-top: 15px;
 `

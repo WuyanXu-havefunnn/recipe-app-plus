@@ -22,21 +22,21 @@ const Wrapper = styled.aside`
 
 const Tagline = styled.h3`
   font-family: 'Benne', serif;
-  font-size: 0.9rem;
-  margin: 40px 0 10px 0;
+  font-size: 1rem;
+  margin: 50px 0 10px 0;
   letter-spacing: 0.5px;
 `
 
 const IntroLine = styled.p`
   font-family: 'Gotu', sans-serif;
-  font-size: 0.6rem;
-  width: 150px;
+  font-size: ${12 / 16}rem;
+  width: 200px;
   margin-bottom: 10px;
 `
 
 const Input = styled.input`
   font-family: 'Gotu', sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   border: 1px solid #ded9de;
   border-radius: 2px;
   padding: 5px;

@@ -1,20 +1,28 @@
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 export default function Nav() {
   return (
     <nav>
       <LinkList>
         <li>
-          <LinkItem href="pages/about.html">about</LinkItem>
+          <Link href="/about">
+            <LinkItem>about</LinkItem>
+          </Link>
         </li>
         <li>
-          <LinkItem href="pages/recipe.html">recipes</LinkItem>
+          <Link href="/recipes">
+            <LinkItem>recipes</LinkItem>
+          </Link>
         </li>
         <li>
-          <LinkItem href="pages/life.html">bits of life...</LinkItem>
+          <Link href="/life">
+            <LinkItem>life</LinkItem>
+          </Link>
         </li>
+
         <li>
           <SearchButton>
             <FontAwesomeIcon icon={faSearch} />
@@ -29,14 +37,14 @@ const LinkList = styled.ul`
   list-style: none;
   display: flex;
   gap: 30px;
-  padding-bottom: 25px;
+  padding-top: 40px;
 `
 
 const LinkItem = styled.a`
   font-family: 'Benne', serif;
-  color: #927b63;
+  color: #6b5b48;
   font-weight: 400;
-  font-size: 16px;
+  font-size: ${20 / 16}rem;
   letter-spacing: 1px;
   text-decoration: none;
   cursor: pointer;

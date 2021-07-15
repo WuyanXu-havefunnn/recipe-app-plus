@@ -1,0 +1,13 @@
+import styled from 'styled-components'
+import Layout from '../components/Layout'
+
+
+export default function LifePage() {
+  return (
+    <Layout>
+      <p>life</p>
+    </Layout>
+  )
+}
+
+
