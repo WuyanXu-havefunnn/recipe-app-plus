@@ -64,7 +64,7 @@ export default function SummerRecipes() {
         />
 
         <RecipeItem
-          imgSrc="https://images.unsplash.com/photo-1603076403761-831da9395592?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1011&q=80"
+          imgSrc="/images/blueberrymuffins.JPG"
           name="Blueberry lemon muffin bombs"
         />
 

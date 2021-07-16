@@ -19,7 +19,7 @@ export default function Nav() {
         </li>
         <li>
           <Link href="/life">
-            <LinkItem>life</LinkItem>
+            <LinkItem>bits of life</LinkItem>
           </Link>
         </li>
 
