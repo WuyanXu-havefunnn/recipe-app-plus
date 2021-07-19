@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
+import Footer from '../components/Footer'
 
 export default function Layout({ children, alignment }) {
   return (
@@ -10,6 +11,7 @@ export default function Layout({ children, alignment }) {
         <Main>{children}</Main>
         <Sidebar />
       </Wrapper>
+      <Footer />
     </>
   )
 }

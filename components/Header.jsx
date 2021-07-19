@@ -48,7 +48,6 @@ const Wrapper = styled.header`
   justify-content: space-around;
   align-items: center;
   padding: 40px;
-  position: relative;
 `
 
 const LogoWrapper = styled.div`
@@ -61,9 +60,7 @@ const HutLogo = styled.div`
   background-repeat: no-repeat;
   width: 150px;
   height: 150px;
-  position: absolute;
-  left: 69%;
-  bottom: 35%;
+  transform: translateX(-60px);
 `
 
 const Logo = styled.div`

@@ -33,13 +33,13 @@ const SocialAccounts = styled.div`
 
 const Instagram = styled.div`
   background-image: url('/images/instagram.svg');
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin-right: 8px;
 `
 const Facebook = styled.div`
   background-image: url('/images/facebook.svg');
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin-right: 8px;
 `

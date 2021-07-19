@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+
 const colors = {
   vegetarian: {
-    text: '#0d5a31',
+    text: '#0b4727',
     bg: '#d0ecdd',
   },
   quick: {
@@ -37,7 +38,7 @@ const colors = {
     bg: '#e8e5da',
   },
   rice: {
-    text: '#06196e',
+    text: '#01156d',
     bg: '#d5ddfe',
   },
   sweet: {
@@ -81,16 +82,16 @@ const Categories = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 200px;
+  gap: 10px;
 `
 
 const Tag = styled.h4`
   font-family: 'Karla', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   width: auto;
   height: auto;
-  padding: 6px;
-  margin: 5px 5px 5px 0;
+  padding: 7px;
   border-radius: 3px;
   text-align: centers;
   color: ${(p) => p.colorScheme.text};
