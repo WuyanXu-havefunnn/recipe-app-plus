@@ -16,7 +16,7 @@ export default function Header() {
     setTimeout(() => {
       setLogoSwitched(true)
     }, 1000)
-  }, [])
+  })
 
   return (
     <Wrapper>
@@ -50,11 +50,6 @@ const Wrapper = styled.header`
   justify-content: space-around;
   align-items: center;
   padding: 40px;
-
-  /* @media ${QUERIES.phoneAndSmaller} {
-    justify-content: center;
-    align-items: center;
-  } */
 `
 
 const LogoWrapper = styled.div`
