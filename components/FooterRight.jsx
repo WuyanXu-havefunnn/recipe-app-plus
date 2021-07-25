@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { QUERIES } from '../lib/constants'
 
 export default function FooterRight() {
   return (
@@ -27,32 +28,48 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 300px;
   gap: 25px;
+  padding-top: 10px;
+
+  @media ${QUERIES.tabletAndSmaller} {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
 `
 
 const Categories = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  @media ${QUERIES.tabletAndSmaller} {
+    gap: 40px;
+  }
 `
 
 const Tagline = styled.h2`
   font-family: 'Gotu', sans-serif;
-  font-size: ${12 / 16}rem;
+  font-size: ${13 / 16}rem;
   letter-spacing: 1px;
 `
+
 const TagGroup = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 15px;
 `
 
 const Tag = styled.p`
   font-family: 'Gotu', sans-serif;
-  font-size: ${12 / 16}rem;
+  font-size: ${13 / 16}rem;
   padding-right: 15px;
   &:hover {
     cursor: pointer;
     color: #fa800e;
+  }
+  @media ${QUERIES.tabletAndSmaller} {
+    padding-right: 0;
   }
 `
 
