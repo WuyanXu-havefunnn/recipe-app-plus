@@ -19,7 +19,7 @@ export default function StanleyTrip() {
         <Img4 />
       </ImgWrapper>
       <Story>
-        We finally managed to hop on our car, of course on a whim, and drove to
+        We finally managed to hop i our car, of course on a whim, and drove to
         Stanley. The first time we heard about the place was from a pharmacist
         in Costco. We told him that we just moved here and asked whether he had
         any recommendation for a outing destination.

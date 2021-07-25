@@ -26,8 +26,8 @@ const Tagline = styled.h1`
 
 const PostDate = styled.small`
   font-family: 'Benne', serif;
-  color: #605e5e;
+  color: #635f5f;
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: ${14 / 16}rem;
   letter-spacing: 1px;
 `

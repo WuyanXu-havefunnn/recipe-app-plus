@@ -37,9 +37,12 @@ const IntroLine = styled.p`
 const Input = styled.input`
   font-family: 'Gotu', sans-serif;
   font-size: 0.7rem;
-  border: 1px solid #ded9de;
+  border: 1px solid #fce7f6;
   border-radius: 2px;
   padding: 5px;
+  &:focus {
+    outline: 1px solid #fac8da;
+  }
 `
 
 const Email = styled.div`

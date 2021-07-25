@@ -70,5 +70,5 @@ const Logo = styled.div`
   width: var(--width);
   height: var(--height);
   cursor: pointer;
-  transition: ease-out 150ms;
+  transition: ease-out 130ms;
 `

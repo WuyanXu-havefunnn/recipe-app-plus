@@ -20,7 +20,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: ${(p) => p.alignment || 'baseline'};
-  padding: 60px 60px 0 60px;
+  padding: 120px;
+  padding-top: 100px;
 `
 const Main = styled.main`
   padding-right: 60px;

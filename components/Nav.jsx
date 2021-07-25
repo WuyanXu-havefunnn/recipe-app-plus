@@ -49,16 +49,20 @@ const LinkItem = styled.a`
   text-decoration: none;
   cursor: pointer;
   &:hover {
-    color: #76877d;
+    /* color: #76877d; */
+    color: #f89c46;
   }
 `
 
 const SearchButton = styled.button`
   background-color: #f5f5f5;
-  color: #76877d;
+  /* color: #76877d; */
+  color: #7fe206;
   border: none;
-  font-size: 15px;
+  font-size: 18px;
   &:hover {
     cursor: pointer;
+    transform: translateY(-5px);
+    transition: 100ms ease-out;
   }
 `

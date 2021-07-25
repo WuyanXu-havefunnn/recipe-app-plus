@@ -9,9 +9,9 @@ export default function SummerRecipes() {
         <HeadingName>All Recipes</HeadingName>
         <Intro>
           What makes a great home-cooked dish? A pinch of joy, a squeeze of
-          love, and a zest of improvision! Trust me that you can make all of the
-          dishes you want in this freestyle recipe, even if you think you are
-          not too much of a cook. Come and give it a try!
+          love, and a zest of improvision! You can make all of the dishes you
+          want in this freestyle recipe, even if you think you are not too much
+          of a cook. Come and give it a try!
         </Intro>
       </Heading>
 
@@ -50,7 +50,7 @@ export default function SummerRecipes() {
 
         <RecipeItem
           imgSrc="https://images.unsplash.com/photo-1603076861434-01358aad844a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
-          name="porky pork"
+          name="porky pork rib"
         />
 
         <RecipeItem
@@ -81,8 +81,8 @@ const Heading = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  border-bottom: 1px double #bad4aa;
-  margin-bottom: 40px;
+  /* border-bottom: 1px double #c4ec93; */
+  margin-bottom: 30px;
 `
 
 const HeadingName = styled.h1`
@@ -90,7 +90,7 @@ const HeadingName = styled.h1`
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 `
 
 const Intro = styled.p`

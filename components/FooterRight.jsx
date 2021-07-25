@@ -52,7 +52,7 @@ const Tag = styled.p`
   padding-right: 15px;
   &:hover {
     cursor: pointer;
-    color: #d81159;
+    color: #fa800e;
   }
 `
 

@@ -7,8 +7,8 @@ const RecipeGrid = ({ children }) => {
 export default RecipeGrid
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  padding-bottom: 60px;
 `

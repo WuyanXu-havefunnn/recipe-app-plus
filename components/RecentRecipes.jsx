@@ -63,7 +63,6 @@ const ReadMore = styled.a`
   font-size: 1rem;
   color: #858383;
   &:hover {
-    /* color: #6a994e; */
-    color: #d81159;
+    color: #fa800e;
   }
 `

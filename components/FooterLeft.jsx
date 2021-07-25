@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 const TopSection = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 `
 
 const FooterLogo = styled.div`

@@ -22,13 +22,15 @@ export default function RecipeItem({ imgSrc, name }) {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  /* background-color: lightblue; */
+  height: 300px;
 `
 
 const DishPic = styled.div`
   background-image: url('${(p) => p.imgSrc}');
   background-position: bottom;
-  width: 200px;
-  height: 230px;
+  flex: 1;
+  /* width: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
   &:hover {
@@ -40,13 +42,15 @@ const DishName = styled.h3`
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  width: 200px;
-  padding: 5px 10px 0 10px;
   text-align: center;
-  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 48px;
   text-transform: capitalize;
   letter-spacing: 1px;
   &:hover {
     cursor: pointer;
+    color: #e049fe;
   }
 `

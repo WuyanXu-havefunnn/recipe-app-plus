@@ -48,9 +48,9 @@ const Heading = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-top: 1px double #bad4aa;
+  /* border-top: 1px double #bad4aa; */
   padding-bottom: 15px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 `
 
 const HeadingName = styled.h1`
@@ -60,13 +60,12 @@ const HeadingName = styled.h1`
   /* margin-bottom: 15px; */
   letter-spacing: 1px;
 `
-const ReadMore = styled.a`
+const ReadMore = styled.div`
   text-decoration: none;
   font-family: 'Benne', serif;
   font-size: 1rem;
   color: #858383;
   &:hover {
-    /* color: #6a994e; */
-    color: #d81159;
+    color: #fa800e;
   }
 `

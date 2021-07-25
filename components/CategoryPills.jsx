@@ -18,7 +18,7 @@ const colors = {
     bg: '#dad1f5',
   },
   healthy: {
-    text: '#9b4b01',
+    text: '#a03800',
     bg: '#f9e1cd',
   },
   seafood: {
