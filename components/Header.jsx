@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Nav from './Nav'
 import Link from 'next/link'
+import { QUERIES } from '../lib/constants'
 
 const logoStartImage = 'littlehutlogo.svg'
 const logoEndImage = 'logohover.svg'
@@ -43,11 +44,17 @@ export default function Header() {
 
 const Wrapper = styled.header`
   background-color: #f5f5f5;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 40px;
+
+  /* @media ${QUERIES.phoneAndSmaller} {
+    justify-content: center;
+    align-items: center;
+  } */
 `
 
 const LogoWrapper = styled.div`
@@ -61,6 +68,10 @@ const HutLogo = styled.div`
   width: 150px;
   height: 150px;
   transform: translateX(-60px);
+
+  @media ${QUERIES.tabletAndSmaller} {
+    display: none;
+  }
 `
 
 const Logo = styled.div`
@@ -71,4 +82,10 @@ const Logo = styled.div`
   height: var(--height);
   cursor: pointer;
   transition: ease-out 130ms;
+
+  @media ${QUERIES.tabletAndSmaller} {
+    background-image: getImage(logoEndImage);
+    width: 320px;
+    height: 100px;
+  }
 `

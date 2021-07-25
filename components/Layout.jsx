@@ -23,14 +23,16 @@ const Wrapper = styled.div`
   align-items: ${(p) => p.alignment || 'baseline'};
   padding: 120px;
   padding-top: 100px;
-  @media ${QUERIES.phoneAndSmaller} {
+  @media ${QUERIES.tabletAndSmaller} {
+    justify-content: center;
+    align-items: center;
     padding: 60px;
   }
 `
 const Main = styled.main`
   padding-right: 60px;
   flex: 1;
-  @media ${QUERIES.phoneAndSmaller} {
+  @media ${QUERIES.tabletAndSmaller} {
     padding: 0;
   }
 `

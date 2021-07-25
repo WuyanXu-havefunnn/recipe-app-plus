@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import { QUERIES } from '../lib/constants'
 
 export default function Nav() {
   return (
@@ -51,6 +52,10 @@ const LinkItem = styled.a`
   &:hover {
     /* color: #76877d; */
     color: #f89c46;
+  }
+
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: 1rem;
   }
 `
 
