@@ -79,7 +79,7 @@ const Logo = styled.div`
   transition: ease-out 130ms;
 
   @media ${QUERIES.tabletAndSmaller} {
-    background-image: getImage(logoEndImage);
+    background-image: ${getImage(logoEndImage)};
     width: 320px;
     height: 100px;
   }
