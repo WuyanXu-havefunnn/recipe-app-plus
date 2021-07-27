@@ -83,4 +83,10 @@ const Logo = styled.div`
     width: 320px;
     height: 100px;
   }
+
+  @media ${QUERIES.phoneAndSmaller} {
+    background-image: ${getImage(logoEndImage)};
+    width: 300px;
+    height: 100px;
+  }
 `

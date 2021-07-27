@@ -1,19 +1,19 @@
 import styled from 'styled-components'
-import Layout from '../components/Layout'
+import LifeBlogLayout from '../components/LifeBlogLayout'
 import LifeGarden from '../components/LifeGarden'
 import StanleyTrip from '../components/StanleyTrip'
 
 
 export default function LifePage() {
   return (
-    <Layout>
+    <LifeBlogLayout>
       <Wrapper>
         <LifeGarden />
-        <Divider1 />
+        {/* <Divider1 />
         <StanleyTrip />
-        <Divider2 />
+        <Divider2 /> */}
       </Wrapper>
-    </Layout>
+    </LifeBlogLayout>
   )
 }
 

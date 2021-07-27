@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import LifeHeading from './LifeHeading'
+import { QUERIES } from '../lib/constants'
+import ImageCaption from './ImageCaption'
 
 export default function LifeGarden() {
   return (
@@ -8,10 +10,11 @@ export default function LifeGarden() {
         tagLine="my not-so-fruitful garden 👩🏻‍🌾"
         postDate="June 12, 2021"
       />
-      <ImgWrapper>
-        <Img1 />
-        <Img2 />
-      </ImgWrapper>
+
+      <ImageWrapper>
+        <Image src="/images/homestrawberries.JPG" />
+      </ImageWrapper>
+      <ImageCaption imageDescription="strawberry flowers and hand-drawn strawberry fruits " />
       <Story>
         Home strawberries in the early spring! (acutually only the leaves and
         flowers... I drew the strawberries on the picture) Just want them to
@@ -20,6 +23,10 @@ export default function LifeGarden() {
         cilantro I planted are blosssoming pretty petite white flowers! What a
         pleasant surprise!
       </Story>
+      <ImageWrapper>
+        <Image src="/images/cilantro.jpg" />
+      </ImageWrapper>
+      <ImageCaption imageDescription="i could never imagine how cute the cilantro flowers are" />
     </Wrapper>
   )
 }
@@ -29,32 +36,40 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
 `
 
-const ImgWrapper = styled.div`
+// const Images = styled.div`
+//   /* width: 100%; */
+//   display: flex;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+//   gap: 50px;
+
+//   @media ${QUERIES.phoneAndSmaller} {
+//     justify-content: center;
+//     align-items: center;
+//   }
+// `
+
+const ImageWrapper = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-`
-const Img1 = styled.div`
-  background-image: url('images/homestrawberries.JPG');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 300px;
-  height: 220px;
+  padding: 10px 120px;
+  @media ${QUERIES.tabletAndSmaller} {
+    padding: 0px;
+  }
 `
 
-const Img2 = styled.div`
-  background-image: url('/images/cilantro.jpg');
-  width: 300px;
-  height: 220px;
-  background-repeat: no-repeat;
-  background-size: contain;
+const Image = styled.img`
+  width: 100%;
 `
 
 const Story = styled.p`
   font-family: 'Gotu', sans-serif;
-  font-size: ${14 / 16}rem;
-  padding: 0 30px;
+  font-size: ${18 / 16}rem;
+  padding: 25px 300px;
+
+  @media ${QUERIES.tabletAndSmaller} {
+    padding: 20px;
+    font-size: 1rem;
+  }
 `

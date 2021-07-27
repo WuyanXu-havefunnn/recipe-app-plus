@@ -28,6 +28,11 @@ const Wrapper = styled.div`
     align-items: center;
     padding: 60px;
   }
+  @media ${QUERIES.phoneAndSmaller} {
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+  }
 `
 const Main = styled.main`
   padding-right: 60px;

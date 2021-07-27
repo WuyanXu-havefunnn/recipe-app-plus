@@ -14,11 +14,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 `
 
 const Tagline = styled.h1`
   font-family: 'Benne', serif;
-  font-size: 1.3rem;
+  font-size: ${25 / 16}rem;
   text-transform: capitalize;
   letter-spacing: 1px;
   padding: 10px;
