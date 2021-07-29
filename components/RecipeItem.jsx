@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'next/dist/client/link'
 
 // const dishItem = {
 //   dish1: {
@@ -8,14 +9,14 @@ import styled from 'styled-components'
 //   },
 // }
 
-export default function RecipeItem({ imgSrc, name }) {
+export default function RecipeItem({ link, imgSrc, name }) {
   return (
-    <Wrapper>
-      <DishPic imgSrc={imgSrc}>
-        <a href="#"></a>
-      </DishPic>
-      <DishName>{name}</DishName>
-    </Wrapper>
+    <a href={link}>
+      <Wrapper>
+        <DishPic imgSrc={imgSrc}></DishPic>
+        <DishName>{name}</DishName>
+      </Wrapper>
+    </a>
   )
 }
 
@@ -43,6 +44,8 @@ const DishName = styled.h3`
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
+  overflow-wrap: break-word;
+  hyphens: auto;
   padding-top: 10px;
   padding-left: 5px;
   padding-right: 5px;

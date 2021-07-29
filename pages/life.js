@@ -10,8 +10,9 @@ export default function LifePage() {
       <Wrapper>
         <LifeGarden />
         {/* <Divider1 />
-        <StanleyTrip />
+        
         <Divider2 /> */}
+        <StanleyTrip />
       </Wrapper>
     </LifeBlogLayout>
   )
@@ -20,6 +21,7 @@ export default function LifePage() {
 const Wrapper=styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 70px;
 `
 

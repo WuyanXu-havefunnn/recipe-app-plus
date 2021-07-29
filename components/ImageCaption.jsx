@@ -10,4 +10,5 @@ const Caption = styled.caption`
   font-style: italic;
   color: #777676;
   letter-spacing: 0.5px;
+  padding: 10px;
 `

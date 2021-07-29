@@ -18,22 +18,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* @media ${QUERIES.tabletAndSmaller} {
-    justify-content: center;
-    align-items: center;
-  }
-  @media ${QUERIES.phoneAndSmaller} {
-    justify-content: center;
-    align-items: center;
-  } */
 `
 const Main = styled.main`
   flex: 1;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  /* @media ${QUERIES.tabletAndSmaller} {
-    padding: 0;
-  } */
 `

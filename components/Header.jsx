@@ -86,7 +86,7 @@ const Logo = styled.div`
 
   @media ${QUERIES.phoneAndSmaller} {
     background-image: ${getImage(logoEndImage)};
-    width: 300px;
+    width: 310px;
     height: 100px;
   }
 `
