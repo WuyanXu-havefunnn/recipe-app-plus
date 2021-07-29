@@ -16,10 +16,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 0 200px 50px 200px; */
+  padding-bottom: 30px;
 
   @media ${QUERIES.tabletAndSmaller} {
-    padding: 50px;
+    padding: 40px;
   }
 `
 
@@ -48,11 +48,11 @@ const PostDate = styled.small`
 const Intro = styled.p`
   font-family: 'Gotu', sans-serif;
   font-size: 1rem;
-  max-width: ${650 / 16}rem;
+  max-width: ${700 / 16}rem;
   padding: 20px 0px;
 
   @media ${QUERIES.tabletAndSmaller} {
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 1rem;
   }
 `

@@ -29,4 +29,13 @@ const Main = styled.main`
   flex: 1;
   padding: 60px;
   width: 100%;
+
+  @media ${QUERIES.tabletAndSmaller} {
+    padding: 35px;
+    padding-bottom: 60px;
+  }
+  @media ${QUERIES.phoneAndSmaller} {
+    padding: 0;
+    padding-bottom: 60px;
+  }
 `

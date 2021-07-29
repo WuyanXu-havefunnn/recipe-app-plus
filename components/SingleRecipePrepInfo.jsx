@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { QUERIES } from '../lib/constants'
 
-const infoName = ['serves', 'prep time', 'cook time', 'total time']
-
 export default function SingleRecipePrepInfo({
   serves,
   prepTime,
@@ -11,75 +9,78 @@ export default function SingleRecipePrepInfo({
 }) {
   return (
     <Wrapper>
-      <InfoHeadingGroup>
-        {infoName.map((name) => (
-          <InfoItem>{name}</InfoItem>
-        ))}
-      </InfoHeadingGroup>
-
-      <InfoData>
+      <InfoWrapper>
+        <InfoName>serves</InfoName>
         <InfoNum>{serves}</InfoNum>
+      </InfoWrapper>
+
+      <InfoWrapper>
+        <InfoName>prep time</InfoName>
         <InfoNum>{prepTime}</InfoNum>
+      </InfoWrapper>
+
+      <InfoWrapper>
+        <InfoName>cook time</InfoName>
         <InfoNum>{cookTime}</InfoNum>
+      </InfoWrapper>
+
+      <InfoWrapper>
+        <InfoName>total time</InfoName>
         <InfoNum>{totalTime}</InfoNum>
-      </InfoData>
+      </InfoWrapper>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   gap: 20px;
-  /* margin: 80px 300px; */
-  border: 1px solid red;
-  padding: 25px;
-  margin-bottom: 30px;
+  border: 2px solid #abd2fa;
+  padding: 25px 50px;
+  margin-bottom: 50px;
 
   @media ${QUERIES.tabletAndSmaller} {
     padding: 20px;
     font-size: 1rem;
-    margin: 80px 200px;
+    margin-bottom: 50px;
   }
 
   @media ${QUERIES.phoneAndSmaller} {
     padding: 20px;
-    margin: 80px 20px;
+    margin: 0 20px;
+    margin-bottom: 50px;
   }
 `
 
-const InfoHeadingGroup = styled.div`
+const InfoWrapper = styled.div`
   display: flex;
-  gap: 50px;
-`
-
-const InfoItem = styled.li`
-  font-family: 'Gotu', sans-serif;
-  font-size: ${18 / 16}rem;
-  text-transform: uppercase;
-  list-style-type: none;
-
-  @media ${QUERIES.phoneAndSmaller} {
-    font-size: 1rem;
-  }
-`
-
-const InfoData = styled.ul`
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 5px;
+`
+
+const InfoName = styled.li`
+  font-family: 'Gotu', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
   list-style-type: none;
+  text-align: center;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: ${12 / 16}rem;
+  }
 `
 
 const InfoNum = styled.li`
   font-family: 'Gotu', sans-serif;
+  color: #6c6d6e;
   font-size: 1rem;
+  text-align: center;
   list-style-type: none;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: 1rem;
+    font-size: ${12 / 16}rem;
   }
 `
