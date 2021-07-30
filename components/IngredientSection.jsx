@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { QUERIES } from '../lib/constants'
 
-export default function SingleRecipeIngredient({ children }) {
+export default function IngredientSection({ children }) {
   return (
     <Wrapper>
       <SectionHeading>Ingredients</SectionHeading>
@@ -30,10 +30,11 @@ const SectionHeading = styled.h2`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
   border-left: 2px solid #fcb97b;
   padding: 20px 30px;
   margin-left: 50px;
+
   @media ${QUERIES.tabletAndSmaller} {
     padding: 20px;
   }

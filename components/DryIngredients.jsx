@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export default function DryIngredients({ children }) {
   return (
     <Wrapper>
-      <Heading>Dry Ingredients</Heading>
+      <Heading>Dry Ingredients •••</Heading>
       <Content>{children}</Content>
       <Note>
         give it a whisk when all of the dry ingredients are in, and set it aside
@@ -15,7 +15,7 @@ export default function DryIngredients({ children }) {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 `
 
 const Heading = styled.h3`

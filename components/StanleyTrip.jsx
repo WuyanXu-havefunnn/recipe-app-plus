@@ -4,6 +4,7 @@ import { QUERIES } from '../lib/constants'
 import ImageFullSize from './ImageFullSize'
 import ImageCaption from './ImageCaption'
 import TextContent from './TextContent'
+import ImageSection from './ImageSection'
 
 export default function StanleyTrip() {
   return (
@@ -13,8 +14,10 @@ export default function StanleyTrip() {
         postDate="June 12, 2021"
       />
 
-      <ImageFullSize imageSrc="/images/stanleylake.JPG" />
-      <ImageCaption imageDescription="view of the beautiful Stanley lake" />
+      <ImageSection>
+        <ImageFullSize imageSrc="/images/stanleylake.JPG" />
+        <ImageCaption imageDescription="view of the beautiful Stanley lake" />
+      </ImageSection>
       <TextContent
         content="We moved from California to Idaho in the winter of 2020. We fell in love
         with the stunning wild nature here ever since then..."
@@ -26,7 +29,7 @@ export default function StanleyTrip() {
         <Image src="/images/shadi-on-the-log.JPG" />
       </Images>
       <TextContent
-        content="We finally managed to hop i our car, of course on a whim, and drove to
+        content="We finally managed to hop in our car, of course on a whim, and drove to
         Stanley. The first time we heard about the place was from a pharmacist
         in Costco. We told him that we just moved here and asked whether he had
         any recommendation for a outing destination."
@@ -40,6 +43,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 `
 
 const Images = styled.div`
@@ -47,13 +51,18 @@ const Images = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 120px;
 
   @media ${QUERIES.tabletAndSmaller} {
     padding: 0px;
+    flex-direction: column;
+    gap: 30px;
   }
 `
 
 const Image = styled.img`
   width: 32%;
+
+  @media ${QUERIES.tabletAndSmaller} {
+    width: 100%;
+  }
 `

@@ -7,7 +7,9 @@ export default function LifeBlogLayout({ children }) {
   return (
     <Wrapper>
       <Header />
-      <Main>{children}</Main>
+      <MaxWidthWrapper>
+        <Main>{children}</Main>
+      </MaxWidthWrapper>
       <Footer />
     </Wrapper>
   )
@@ -18,6 +20,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`
+const MaxWidthWrapper = styled.div`
+  max-width: 1024px;
 `
 const Main = styled.main`
   flex: 1;

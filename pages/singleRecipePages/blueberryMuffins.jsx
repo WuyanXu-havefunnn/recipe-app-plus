@@ -4,7 +4,7 @@ import SingleRecipeHeading from '../../components/SingleRecipeHeading'
 import { QUERIES } from '../../lib/constants'
 import ImageFullSize from '../../components/ImageFullSize'
 import SingleRecipePrepInfo from '../../components/SingleRecipePrepInfo'
-import SingleRecipeIngredient from '../../components/SingleRecipeIngredient'
+import IngredientSection from '../../components/IngredientSection'
 import DryIngredients from '../../components/DryIngredients'
 import IngredientItem from '../../components/IngredientItem'
 import WetIngredients from '../../components/WetIngredients'
@@ -29,7 +29,7 @@ export default function BlueberryMuffins() {
 
       <ImageFullSize imageSrc="/images/blueberrymuffinshorizontal.JPG" />
 
-      <SingleRecipeIngredient>
+      <IngredientSection>
         <DryIngredients>
           <IngredientItem
             name="all purpose flour"
@@ -58,7 +58,8 @@ export default function BlueberryMuffins() {
           <IngredientItem name="lemon juice" measurement="1/4 cup (60ml)" />
           <IngredientItem name="lemon zest" measurement="1 whole lemon" />
         </WetIngredients>
-      </SingleRecipeIngredient>
+      </IngredientSection>
+
       <SingleRecipeInstuctions>
         <InstructionList>
           <Instuction>

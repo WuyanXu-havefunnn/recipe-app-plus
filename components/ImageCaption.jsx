@@ -5,10 +5,9 @@ export default function ImageCaption({ imageDescription }) {
 }
 
 const Caption = styled.caption`
-  font-size: 1rem;
-  font-family: 'Benne', serif;
+  font-size: ${14 / 16}rem;
+  font-family: 'Gotu', sans-serif;
   font-style: italic;
   color: #777676;
   letter-spacing: 0.5px;
-  padding: 10px;
 `

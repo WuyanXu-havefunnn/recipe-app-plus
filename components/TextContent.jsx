@@ -8,7 +8,7 @@ export default function TextContent({ content }) {
 const Story = styled.p`
   font-family: 'Gotu', sans-serif;
   font-size: ${18 / 16}rem;
-  padding: 20px 300px;
+  padding: 20px 150px;
 
   @media ${QUERIES.tabletAndSmaller} {
     padding: 20px;

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export default function WetIngredients({ children }) {
   return (
     <Wrapper>
-      <Heading>Wet Ingredients</Heading>
+      <Heading>Wet Ingredients •••</Heading>
       <Content>{children}</Content>
       <Note>whisk whisk whisk whisk ~ 🧚🏻‍♀️</Note>
     </Wrapper>
@@ -13,7 +13,7 @@ export default function WetIngredients({ children }) {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 `
 
 const Heading = styled.h3`
