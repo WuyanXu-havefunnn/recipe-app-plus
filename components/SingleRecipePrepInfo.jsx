@@ -33,20 +33,21 @@ export default function SingleRecipePrepInfo({
 }
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px 20px;
   border: 2px solid #abd2fa;
   padding: 25px 50px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 
   @media ${QUERIES.tabletAndSmaller} {
     padding: 20px;
-    font-size: 1rem;
     margin-bottom: 50px;
   }
 
   @media ${QUERIES.phoneAndSmaller} {
+    grid-template-columns: 1fr 1fr;
     padding: 20px;
     margin: 0 20px;
     margin-bottom: 50px;
@@ -63,14 +64,10 @@ const InfoWrapper = styled.div`
 
 const InfoName = styled.li`
   font-family: 'Gotu', sans-serif;
-  font-size: 1rem;
+  font-size: ${15 / 16}rem;
   text-transform: uppercase;
   list-style-type: none;
   text-align: center;
-
-  @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${12 / 16}rem;
-  }
 `
 
 const InfoNum = styled.li`
@@ -79,8 +76,4 @@ const InfoNum = styled.li`
   font-size: 1rem;
   text-align: center;
   list-style-type: none;
-
-  @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${12 / 16}rem;
-  }
 `

@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import { QUERIES } from '../lib/constants'
 
-export default function SingleRecipeIngredient({ children }) {
+export default function SingleRecipeInstuctions({ children }) {
   return (
     <Wrapper>
-      <SectionHeading>Ingredients</SectionHeading>
+      <SectionHeading>Instructions</SectionHeading>
       <Content>{children}</Content>
     </Wrapper>
   )
@@ -13,7 +13,7 @@ export default function SingleRecipeIngredient({ children }) {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   margin: 50px 0;
 
   @media ${QUERIES.phoneAndSmaller} {
@@ -31,13 +31,9 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border-left: 2px solid #fcb97b;
-  padding: 20px 30px;
-  margin-left: 50px;
+  /* border-left: 2px solid #fcb97b; */
+  padding: 20px 50px;
   @media ${QUERIES.tabletAndSmaller} {
     padding: 20px;
-  }
-  @media ${QUERIES.phoneAndSmaller} {
-    margin-left: 0;
   }
 `

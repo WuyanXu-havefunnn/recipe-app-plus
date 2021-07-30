@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
-export default function DryIngredient({ children }) {
+export default function WetIngredients({ children }) {
   return (
     <Wrapper>
-      <Heading>Dry Ingredients</Heading>
+      <Heading>Wet Ingredients</Heading>
       <Content>{children}</Content>
-      <Note>
-        give it a whisk when all of the dry ingredients are in, and set it aside
-      </Note>
+      <Note>whisk whisk whisk whisk ~ 🧚🏻‍♀️</Note>
     </Wrapper>
   )
 }
