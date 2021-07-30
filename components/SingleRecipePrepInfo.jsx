@@ -37,20 +37,18 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px 20px;
   border: 2px solid #abd2fa;
-  padding: 25px 50px;
-  margin-bottom: 50px;
+  padding: 20px 30px;
+  margin: 50px 0;
   flex-wrap: wrap;
 
   @media ${QUERIES.tabletAndSmaller} {
     padding: 20px;
-    margin-bottom: 50px;
   }
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-template-columns: 1fr 1fr;
     padding: 20px;
-    margin: 0 20px;
-    margin-bottom: 50px;
+    margin: 50px 20px;
   }
 `
 

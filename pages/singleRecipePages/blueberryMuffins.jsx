@@ -20,14 +20,15 @@ export default function BlueberryMuffins() {
         postDate="July 27, 2021"
         intro="Summer is here and I have been yearning for sweet things for a long time... Since I always feel guilty after eating desserts, here we are -- Happy Light-sweet Blueberry Lemon Muffins!"
       />
+
+      <ImageFullSize imageSrc="/images/blueberrymuffinshorizontal.JPG" />
+
       <SingleRecipePrepInfo
         serves="12"
         prepTime="10 min"
         cookTime="20 min"
         totalTime="30 min"
       />
-
-      <ImageFullSize imageSrc="/images/blueberrymuffinshorizontal.JPG" />
 
       <IngredientSection>
         <DryIngredients>
