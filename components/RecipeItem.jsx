@@ -44,6 +44,7 @@ const DishName = styled.h3`
   letter-spacing: 1px;
   &:hover {
     cursor: pointer;
-    color: #e049fe;
+    /* color: #e049fe; */
+    color: #e91e6b;
   }
 `

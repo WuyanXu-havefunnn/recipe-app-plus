@@ -14,21 +14,26 @@ export default function RecentRecipes() {
 
       <RecipeGrid>
         <RecipeItem
-          imgSrc="https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1358&q=80"
-          name="homestyle dumplings"
-        />
-        <RecipeItem
-          imgSrc="https://images.unsplash.com/photo-1603092872758-480fbfd59ba8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=921&q=80"
-          name="broccoli shrimp"
-        />
-        <RecipeItem
           link="/singleRecipePages/blueberryMuffins"
           imgSrc="/images/blueberrymuffins.JPG"
           name="Blueberry lemon muffin bombs"
         />
+
         <RecipeItem
-          imgSrc="https://images.unsplash.com/photo-1603093323671-f860b21f39d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80"
-          name="chinese spinach with snow-white fungus"
+          link="/singleRecipePages/tomatoTofu"
+          imgSrc="/images/tomatoTofu.JPG"
+          name="healthy fun yammy tomatooo-fu!"
+        />
+
+        <RecipeItem
+          // link="/singleRecipePages/blueberryMuffins"
+          imgSrc="/images/broccoliBeef.jpg"
+          name="broccoli beef"
+        />
+
+        <RecipeItem
+          imgSrc="/images/homestyleEggplant.jpg"
+          name="homestyle eggplant"
         />
 
         <RecipeItem
