@@ -22,7 +22,7 @@ export default function RecentRecipes() {
         <RecipeItem
           link="/singleRecipePages/tomatoTofu"
           imgSrc="/images/tomatoTofu.JPG"
-          name="healthy fun yammy tomatooo-fu!"
+          name="healthy yammy tomatooo-fu!"
         />
 
         <RecipeItem

@@ -16,7 +16,7 @@ export default function TomatoTofu() {
   return (
     <SingleRecipeLayout>
       <SingleRecipeHeading
-        title="healthy fun yammy Tomatooo-fu!"
+        title="healthy yammy Tomatooo-fu!"
         intro="Summer is here and I have been yearning for sweet things for a long time... Since I always feel guilty after eating desserts, here we are -- Happy Light-sweet Blueberry Lemon Muffins!"
       />
 
