@@ -6,10 +6,10 @@ export default function AboutMe() {
       <NameLine>Hey there, I'm Wuyan 🤓</NameLine>
       <Avatar />
       <IntroContent>
-        I love eating and cooking Chinese food at home. I find cooking to be the
-        natural way to express my creative energy. My mom always says that
-        delicious food can make people good inside and out. Let's cook and share
-        together!
+        I'm passionate about eating and cooking Chinese food at home. I find
+        cooking to be a natural way to express my creative energy. My mom always
+        says that delicious food makes people good inside and out. Let's cook,
+        share, and live together!
       </IntroContent>
     </Wrapper>
   )

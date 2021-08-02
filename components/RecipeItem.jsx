@@ -1,13 +1,4 @@
 import styled from 'styled-components'
-import Link from 'next/dist/client/link'
-
-// const dishItem = {
-//   dish1: {
-//     bgImg:
-//       'https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1358&q=80',
-//     text: 'homestyle dumplings',
-//   },
-// }
 
 export default function RecipeItem({ link, imgSrc, name }) {
   return (
@@ -31,7 +22,6 @@ const DishPic = styled.div`
   background-image: url('${(p) => p.imgSrc}');
   background-position: bottom;
   flex: 1;
-  /* width: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
   &:hover {

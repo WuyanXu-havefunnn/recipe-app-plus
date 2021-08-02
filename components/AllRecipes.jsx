@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import RecipeGrid from './RecipeGrid'
 import RecipeItem from './RecipeItem'
-import Link from 'next/dist/client/link'
 
 export default function SummerRecipes() {
   return (
@@ -94,7 +93,6 @@ const Heading = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  /* border-bottom: 1px double #c4ec93; */
   margin-bottom: 30px;
 `
 

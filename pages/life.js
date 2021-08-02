@@ -9,9 +9,6 @@ export default function LifePage() {
     <LifeBlogLayout>
       <Wrapper>
         <LifeGarden />
-        {/* <Divider1 />
-        
-        <Divider2 /> */}
         <StanleyTrip />
       </Wrapper>
     </LifeBlogLayout>
