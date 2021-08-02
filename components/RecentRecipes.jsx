@@ -22,8 +22,9 @@ export default function RecentRecipes() {
           name="broccoli shrimp"
         />
         <RecipeItem
-          imgSrc="https://images.unsplash.com/photo-1572083925563-708dcdb63763?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80"
-          name="mapo tofu"
+          link="/singleRecipePages/blueberryMuffins"
+          imgSrc="/images/blueberrymuffins.JPG"
+          name="Blueberry lemon muffin bombs"
         />
         <RecipeItem
           imgSrc="https://images.unsplash.com/photo-1603093323671-f860b21f39d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80"

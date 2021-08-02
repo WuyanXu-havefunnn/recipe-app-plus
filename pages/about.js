@@ -19,7 +19,7 @@ export default function AboutPage() {
         natural way to express my creative energy. My mom always says that
         delicious food makes people good inside and out. I would like to dedicate this personal blog to posting my recipes for homemade Chinese food and all kinds of food in general.</TextContent>
 
-     <TextContent>As a dedication to appreciating beauty and miracle in everyday life, I will also share bits of my life in this blog too. </TextContent> 
+     <TextContent>As a dedication to appreciating beauty and miracles in everyday life, I will also share bits of my life with my dear husband Shadi in this blog too. </TextContent> 
      
      <TextContent>Let's cook, share, and live together! 🥳 </TextContent>
 
