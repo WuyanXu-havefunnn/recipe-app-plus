@@ -9,4 +9,5 @@ const Wrapper = styled.ol`
   flex-direction: column;
   gap: 15px;
   padding: 0 20px;
+  list-style: auto;
 `

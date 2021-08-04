@@ -7,4 +7,5 @@ export default function Instuction({ children }) {
 const Wrapper = styled.li`
   font-family: 'Gotu', sans-serif;
   font-size: 1rem;
+  line-height: var(--line-height-body);
 `

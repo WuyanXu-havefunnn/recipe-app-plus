@@ -24,6 +24,7 @@ const Tagline = styled.h1`
   text-transform: capitalize;
   letter-spacing: 1px;
   padding: 10px;
+  line-height: 1.5;
 
   @media ${QUERIES.phoneAndSmaller} {
     padding: 20px;

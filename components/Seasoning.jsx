@@ -6,7 +6,7 @@ export default function Seasoning({ children }) {
       <Heading>Seasoning •••</Heading>
       <Content>{children}</Content>
       <Note>
-        you are encouraged be flexible and creative when it comes to seasoning:
+        You are encouraged be flexible and creative when it comes to seasoning:
         increase or reduce the amount of certain seasoning based on your own
         taste and preferences 🧂
       </Note>

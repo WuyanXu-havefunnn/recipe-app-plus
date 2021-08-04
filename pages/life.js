@@ -19,7 +19,7 @@ const Wrapper=styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 70px;
+  gap: 100px;
 `
 
 const Divider1=styled.div`

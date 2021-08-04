@@ -31,7 +31,7 @@ const DishPic = styled.div`
 
 const DishName = styled.h3`
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 1rem;
+  font-size: ${18 / 16}rem;
   font-weight: 400;
   text-align: center;
   overflow-wrap: break-word;
@@ -42,6 +42,7 @@ const DishName = styled.h3`
   height: 48px;
   text-transform: capitalize;
   letter-spacing: 1px;
+  line-height: 1.5;
   &:hover {
     cursor: pointer;
     /* color: #e049fe; */

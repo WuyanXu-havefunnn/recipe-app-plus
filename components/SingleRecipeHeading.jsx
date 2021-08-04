@@ -50,6 +50,7 @@ const Intro = styled.p`
   font-size: 1rem;
   max-width: ${700 / 16}rem;
   padding: 20px 0px;
+  line-height: var(--line-height-body);
 
   @media ${QUERIES.tabletAndSmaller} {
     /* padding: 20px; */

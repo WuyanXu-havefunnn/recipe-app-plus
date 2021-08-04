@@ -96,4 +96,5 @@ const Tag = styled.h4`
   text-align: centers;
   color: ${(p) => p.colorScheme.text};
   background-color: ${(p) => p.colorScheme.bg};
+  line-height: 1.5;
 `

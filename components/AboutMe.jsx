@@ -35,12 +35,14 @@ const Avatar = styled.div`
 const NameLine = styled.h3`
   font-family: 'Gotu', sans-serif;
   letter-spacing: 0.3px;
-  font-size: ${14.5 / 16}rem;
+  font-size: ${14 / 16}rem;
   margin-bottom: 10px;
+  line-height: 1.5;
 `
 
 const IntroContent = styled.p`
-  font-size: ${12 / 16}rem;
+  font-size: ${13 / 16}rem;
   font-family: 'Gotu', sans-serif;
   margin-top: 15px;
+  line-height: 1.5;
 `

@@ -6,7 +6,7 @@ export default function DryIngredients({ children }) {
       <Heading>Dry Ingredients •••</Heading>
       <Content>{children}</Content>
       <Note>
-        give it a whisk when all of the dry ingredients are in, and set it aside
+        Give it a whisk when all of the dry ingredients are in, and set it aside
       </Note>
     </Wrapper>
   )

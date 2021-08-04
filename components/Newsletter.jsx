@@ -29,14 +29,15 @@ const Tagline = styled.h3`
 
 const IntroLine = styled.p`
   font-family: 'Gotu', sans-serif;
-  font-size: ${12 / 16}rem;
+  font-size: ${13 / 16}rem;
   width: 200px;
   margin-bottom: 10px;
+  line-height: 1.5;
 `
 
 const Input = styled.input`
   font-family: 'Gotu', sans-serif;
-  font-size: 0.7rem;
+  font-size: ${12 / 16}rem;
   border: 1px solid #fce7f6;
   border-radius: 2px;
   padding: 5px;
@@ -53,7 +54,7 @@ const Email = styled.div`
 
 const Button = styled.button`
   font-family: 'Mansalva', cursive;
-  font-size: 0.7rem;
+  font-size: ${12 / 16}rem;
   color: #d81159;
   background-color: #fce7f6;
   text-transform: uppercase;
@@ -61,6 +62,7 @@ const Button = styled.button`
   border: none;
   border-radius: 2px;
   margin-left: 5px;
+  line-height: 1.5;
 
   &:hover {
     cursor: pointer;

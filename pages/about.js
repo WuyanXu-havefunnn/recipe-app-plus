@@ -64,7 +64,8 @@ const TextContent=styled.p`
   font-size: ${18 / 16}rem;
   padding: 10px 150px;
   letter-spacing: 1px;
-
+  line-height: 1.5;
+  
   @media ${QUERIES.tabletAndSmaller} {
     padding: 20px;
     font-size: 1rem;

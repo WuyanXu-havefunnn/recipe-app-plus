@@ -102,10 +102,12 @@ const HeadingName = styled.h1`
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-bottom: 10px;
+  line-height: 1.5;
 `
 
 const Intro = styled.p`
   font-family: 'Gotu', sans-serif;
-  font-size: ${13 / 16}rem;
+  font-size: ${14 / 16}rem;
   margin-bottom: 20px;
+  line-height: 1.7;
 `

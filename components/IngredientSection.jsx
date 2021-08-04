@@ -34,6 +34,7 @@ const Content = styled.div`
   border-left: 2px solid #fcb97b;
   padding: 20px 30px;
   margin-left: 50px;
+  line-height: 1.4;
 
   @media ${QUERIES.tabletAndSmaller} {
     padding: 20px;
