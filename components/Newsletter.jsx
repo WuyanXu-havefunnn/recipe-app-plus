@@ -1,8 +1,31 @@
 import styled from 'styled-components'
 import React, { useState } from 'react'
+import Airtable from 'airtable'
+import toast from 'react-hot-toast'
+
+const base = new Airtable({ apiKey: 'keyl9Z8txJ7Jvp3Py' }).base(
+  'appHEbBjxxpZqwZFL',
+)
 
 export default function Newsletter() {
   const [email, setEmail] = useState('')
+
+  const addNewEmail = () => {
+    base('signup').create(
+      [
+        {
+          fields: { email },
+        },
+      ],
+      function (err, records) {
+        if (err) {
+          toast.error(err)
+          return
+        }
+        toast.success('Hi! You have successfully signed up for the newsletter!')
+      },
+    )
+  }
 
   return (
     <Wrapper>
@@ -15,6 +38,8 @@ export default function Newsletter() {
         onSubmit={(event) => {
           event.preventDefault()
           console.log(email)
+          addNewEmail()
+          setEmail('')
         }}
       >
         <Input
@@ -24,6 +49,7 @@ export default function Newsletter() {
           onChange={(event) => {
             setEmail(event.target.value)
           }}
+          required
         />
         <SubmitBtn type="submit">join</SubmitBtn>
       </EmailForm>
