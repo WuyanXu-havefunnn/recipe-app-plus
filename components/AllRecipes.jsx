@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import RecipeGrid from './RecipeGrid'
 import RecipeItem from './RecipeItem'
+import SearchBar from './SearchBar'
 
-export default function SummerRecipes() {
+export default function AllRecipes() {
   return (
-    <>
+    <Wrapper>
       <Heading>
         <HeadingName>All Recipes</HeadingName>
         <Intro>
@@ -14,6 +15,8 @@ export default function SummerRecipes() {
           of a cook. Come and give it a try!
         </Intro>
       </Heading>
+
+      <SearchBar />
 
       <RecipeGrid>
         <RecipeItem
@@ -31,10 +34,11 @@ export default function SummerRecipes() {
           imgSrc="https://images.unsplash.com/photo-1552611052-33e04de081de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
           name="seafood udon"
         />
+
         <RecipeItem
-          link="/life"
-          imgSrc="https://www.foxandbriar.com/wp-content/uploads/2018/09/shrimp-broccoli-stir-fry-1-of-5.jpg"
-          name="broccoli shrimp"
+          link="/singleRecipePages/tomatoTofu"
+          imgSrc="/images/tomatoTofu.JPG"
+          name="healthy yammy tomatooo-fu!"
         />
 
         <RecipeItem
@@ -85,9 +89,15 @@ export default function SummerRecipes() {
           name="Korean-style bibibum!"
         />
       </RecipeGrid>
-    </>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`
 
 const Heading = styled.div`
   display: flex;

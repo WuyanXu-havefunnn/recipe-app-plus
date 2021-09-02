@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Link from 'next/link'
+import { resolveHref } from 'next/dist/next-server/lib/router/router'
 
 const colors = {
   vegetarian: {
@@ -45,23 +47,51 @@ const colors = {
     text: '#9f1957',
     bg: '#feebf3',
   },
+  // spicy: {
+  //   text: '#9f1957',
+  //   bg: '#feebf3',
+  // },
 }
+
 export default function CategoryPills() {
   return (
     <Wrapper>
       <Tagline>Top Categories</Tagline>
       <Categories>
-        <Tag colorScheme={colors.vegetarian}>vegetarian</Tag>
-        <Tag colorScheme={colors.quick}>quick & easy</Tag>
-        <Tag colorScheme={colors.beef}>beef</Tag>
-        <Tag colorScheme={colors.baking}>baking</Tag>
-        <Tag colorScheme={colors.healthy}>healthy</Tag>
-        <Tag colorScheme={colors.seafood}>seafood</Tag>
-        <Tag colorScheme={colors.pork}>pork</Tag>
-        <Tag colorScheme={colors.chicken}>chicken</Tag>
-        <Tag colorScheme={colors.egg}>egg</Tag>
-        <Tag colorScheme={colors.rice}>rice & noodles</Tag>
-        <Tag colorScheme={colors.sweet}>sweety sweet things</Tag>
+        <Link href="/vegetarian">
+          <Button colorScheme={colors.vegetarian}>vegetarian</Button>
+        </Link>
+        <Button type="button" colorScheme={colors.quick}>
+          quick & easy
+        </Button>
+        <Button type="button" colorScheme={colors.beef}>
+          beef
+        </Button>
+        <Button type="button" colorScheme={colors.baking}>
+          baking
+        </Button>
+        <Button type="button" colorScheme={colors.healthy}>
+          healthy
+        </Button>
+        <Button type="button" colorScheme={colors.seafood}>
+          seafood
+        </Button>
+        <Button type="button" colorScheme={colors.pork}>
+          pork
+        </Button>
+        <Button type="button" colorScheme={colors.chicken}>
+          chicken
+        </Button>
+        <Button type="button" colorScheme={colors.egg}>
+          egg
+        </Button>
+        <Button type="button" colorScheme={colors.rice}>
+          rice & noodles
+        </Button>
+
+        <Link href="/sweet">
+          <Button colorScheme={colors.sweet}>sweety sweet things</Button>
+        </Link>
       </Categories>
     </Wrapper>
   )
@@ -85,8 +115,9 @@ const Categories = styled.div`
   gap: 10px;
 `
 
-const Tag = styled.h4`
+const Button = styled.button`
   font-family: 'Karla', sans-serif;
+  border: none;
   font-size: 0.8rem;
   font-weight: 600;
   width: auto;
@@ -97,4 +128,9 @@ const Tag = styled.h4`
   color: ${(p) => p.colorScheme.text};
   background-color: ${(p) => p.colorScheme.bg};
   line-height: 1.5;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(105%);
+    transition: 100ms ease-out;
+  }
 `

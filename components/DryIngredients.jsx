@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 
 const Heading = styled.h3`
   font-family: 'Gotu', sans-serif;
+  color: #cc3d01;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;

@@ -11,8 +11,6 @@ export default function Home() {
       <RecentRecipes />
       <SummerRecipes />
     </Layout>
-    
-
   )
 }
 

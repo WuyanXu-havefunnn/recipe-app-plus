@@ -24,6 +24,7 @@ const Heading = styled.h3`
   font-family: 'Gotu', sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
+  color: #cc3d01;
   text-transform: uppercase;
   font-size: ${18 / 16}rem;
 `

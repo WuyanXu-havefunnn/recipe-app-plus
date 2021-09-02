@@ -17,7 +17,8 @@ export default function TomatoTofu() {
     <SingleRecipeLayout>
       <SingleRecipeHeading
         title="healthy yammy Tomatooo-fu!"
-        intro="Summer is here and I have been yearning for sweet things for a long time... Since I always feel guilty after eating desserts, here we are -- Happy Light-sweet Blueberry Lemon Muffins!"
+        postDate="July 30, 2021"
+        intro="Have you ever thought of what magical sparks would happen when tomatoes meet tofu? All I can tell you is that it is a dish that goes with anything-- bread, rice, noodles, oatmeal... It's so healthy, flavory, and easy!"
       />
 
       <ImageFullSize imageSrc="/images/tomatoTofu.JPG" />

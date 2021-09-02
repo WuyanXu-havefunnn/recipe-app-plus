@@ -1,11 +1,10 @@
 import Layout from '../components/Layout'
-import AllRecipes from '../components/AllRecipes'
-
+import VegetarianRecipes from '../components/VegetarianRecipes'
 
 export default function RecipesPage() {
   return (
     <Layout>
-      <AllRecipes />
+      <VegetarianRecipes />
     </Layout>
   )
 }

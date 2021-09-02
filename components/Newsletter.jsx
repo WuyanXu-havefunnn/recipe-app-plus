@@ -1,37 +1,54 @@
 import styled from 'styled-components'
+import React, { useState } from 'react'
 
 export default function Newsletter() {
+  const [email, setEmail] = useState('')
+
   return (
     <Wrapper>
       <Tagline>Newsletter</Tagline>
-      <IntroLine>
+      <Label>
         I will send out new recipes, links & inspirations about life a few times
         a month ~
-      </IntroLine>
-      <Email>
-        <Input type="email" placeholder="Your email please 🥳" />
-        <Button>join</Button>
-      </Email>
+      </Label>
+      <EmailForm
+        onSubmit={(event) => {
+          event.preventDefault()
+          console.log(email)
+        }}
+      >
+        <Input
+          type="email"
+          placeholder="Your email please 🥳"
+          value={email}
+          onChange={(event) => {
+            setEmail(event.target.value)
+          }}
+        />
+        <SubmitBtn type="submit">join</SubmitBtn>
+      </EmailForm>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.aside`
   width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 `
 
 const Tagline = styled.h3`
   font-family: 'Benne', serif;
   font-size: 1rem;
-  margin: 50px 0 10px 0;
+  margin-top: 50px;
   letter-spacing: 0.5px;
 `
 
-const IntroLine = styled.p`
+const Label = styled.label`
   font-family: 'Gotu', sans-serif;
   font-size: ${13 / 16}rem;
   width: 200px;
-  margin-bottom: 10px;
   line-height: 1.5;
 `
 
@@ -46,13 +63,13 @@ const Input = styled.input`
   }
 `
 
-const Email = styled.div`
+const EmailForm = styled.form`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 `
 
-const Button = styled.button`
+const SubmitBtn = styled.button`
   font-family: 'Mansalva', cursive;
   font-size: ${12 / 16}rem;
   color: #d81159;
