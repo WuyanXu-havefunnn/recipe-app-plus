@@ -22,7 +22,9 @@ export default function Newsletter() {
           toast.error(err)
           return
         }
-        toast.success('Hi! You have successfully signed up for the newsletter!')
+        toast('Hi! You have successfully signed up for the newsletter!', {
+          icon: '🥳',
+        })
       },
     )
   }
@@ -37,14 +39,14 @@ export default function Newsletter() {
       <EmailForm
         onSubmit={(event) => {
           event.preventDefault()
-          console.log(email)
+          // console.log(email)
           addNewEmail()
           setEmail('')
         }}
       >
         <Input
           type="email"
-          placeholder="Your email please 🥳"
+          placeholder="signmeup@email.com"
           value={email}
           onChange={(event) => {
             setEmail(event.target.value)
