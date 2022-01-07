@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import React, { useState } from 'react'
+import React from 'react'
 import NavItem from './NavItem'
 import SearchButton from './SearchButton'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -48,21 +48,22 @@ const DropdownWrapper = styled.div`
   position: absolute;
   top: 60px;
   width: 120px;
-  padding: 1rem 0;
+  margin-top: 1rem;
   overflow: hidden;
+  border-radius: 20px;
+  border: dotted #a2d2ff;
 `
 
 const ItemWrapper = styled.a`
   font-size: ${20 / 16}rem;
   height: 40px;
-  background-color: yellow;
-  border-bottom: 1px solid black;
+  background-color: white;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   padding: ${14 / 16}rem;
   &:hover {
-    color: blue;
+    color: #fa800e;
   }
 `
 

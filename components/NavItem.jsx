@@ -25,8 +25,6 @@ export default function NavItem(props) {
   return (
     //   when clicked, it will envoke the setOpen() function we got from useState, and it will flip the open value to the opposite of whatever it currently is (the user can toggle the state on and off)
 
-    //
-
     <ListItem>
       <ItemName href={props.filename} onClick={() => setOpen((open) => !open)}>
         {props.name}
