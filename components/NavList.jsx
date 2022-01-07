@@ -47,6 +47,7 @@ const LinkList = styled.ul`
 const DropdownWrapper = styled.div`
   position: absolute;
   top: 60px;
+  left: 70px;
   width: 120px;
   margin-top: 1rem;
   overflow: hidden;
