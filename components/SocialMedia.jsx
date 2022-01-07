@@ -5,11 +5,11 @@ export default function SocialMedia() {
     <Wrapper>
       <Tagline>Follow me on</Tagline>
       <SocialAccounts>
-        <a href="#">
+        <a href="#" target="_blank">
           <Instagram />
         </a>
-        <a href="#">
-          <Facebook />
+        <a href="https://medium.com/@xuwuyantracy" target="_blank">
+          <Medium />
         </a>
       </SocialAccounts>
     </Wrapper>
@@ -37,8 +37,8 @@ const Instagram = styled.div`
   height: 30px;
   margin-right: 8px;
 `
-const Facebook = styled.div`
-  background-image: url('/images/facebook.svg');
+const Medium = styled.div`
+  background-image: url('/images/medium.svg');
   width: 30px;
   height: 30px;
   margin-right: 8px;
