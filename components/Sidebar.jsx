@@ -18,8 +18,6 @@ export default function Sidebar() {
 
 const Wrapper = styled.aside`
   width: 200px;
-  /* border: 1px solid red;
-  height: 100%; */
 
   @media ${QUERIES.tabletAndSmaller} {
     display: none;

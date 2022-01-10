@@ -1,7 +1,6 @@
-import { white } from "colorette";
-import { createGlobalStyle } from "styled-components";
-import { COLORS, WEIGHTS } from "../lib/constants";
-
+import { white } from 'colorette'
+import { createGlobalStyle } from 'styled-components'
+import { COLORS, WEIGHTS } from '../lib/constants'
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 

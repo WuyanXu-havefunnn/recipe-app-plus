@@ -4,6 +4,7 @@ import NavItem from './NavItem'
 import SearchButton from './SearchButton'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { QUERIES } from '../lib/constants'
 
 export default function NavList() {
   return (
@@ -12,9 +13,11 @@ export default function NavList() {
 
       <RecipeSection>
         <NavItem filename="/recipes" name="recipes" />
-        <NavItem name={<FontAwesomeIcon icon={faAngleDown} />}>
-          <DropdownMenu />
-        </NavItem>
+        <ArrowWrapper>
+          <NavItem name={<FontAwesomeIcon icon={faAngleDown} />}>
+            <DropdownMenu />
+          </NavItem>
+        </ArrowWrapper>
       </RecipeSection>
 
       <NavItem filename="/life" name="bits of life" />
@@ -42,6 +45,12 @@ const LinkList = styled.ul`
   gap: 30px;
   padding-top: 40px;
   position: relative;
+`
+
+const ArrowWrapper = styled.div`
+  @media ${QUERIES.tabletAndSmaller} {
+    display: none;
+  } ;
 `
 
 const DropdownWrapper = styled.div`

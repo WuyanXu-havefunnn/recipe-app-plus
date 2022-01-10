@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import RecipeGrid from './RecipeGrid'
 import RecipeItem from './RecipeItem'
-import SearchBar from './SearchBar'
 
 export default function AllRecipes() {
   return (
@@ -15,8 +14,6 @@ export default function AllRecipes() {
           of a cook. Come and give it a try!
         </Intro>
       </Heading>
-
-      <SearchBar />
 
       <RecipeGrid>
         <RecipeItem
