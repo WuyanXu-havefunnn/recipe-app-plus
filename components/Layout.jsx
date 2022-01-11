@@ -23,6 +23,7 @@ const Wrapper = styled.div`
   align-items: ${(p) => p.alignment || 'baseline'};
   padding: 120px;
   padding-top: 100px;
+
   @media ${QUERIES.tabletAndSmaller} {
     justify-content: center;
     align-items: center;

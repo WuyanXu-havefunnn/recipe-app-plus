@@ -3,6 +3,7 @@ import AboutMe from './AboutMe'
 import Newsletter from './Newsletter'
 import SocialMedia from './SocialMedia'
 import CategoryPills from './CategoryPills'
+
 import { QUERIES } from '../lib/constants'
 
 export default function Sidebar() {
