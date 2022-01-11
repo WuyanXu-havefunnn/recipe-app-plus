@@ -6,8 +6,6 @@ export default function SocialMedia() {
     <Wrapper>
       <Tagline>Follow me on</Tagline>
       <SocialAccounts>
-        <SocialMediaIcon link="#" src="/images/instagram.svg" />
-
         <SocialMediaIcon
           link="https://medium.com/@xuwuyantracy"
           src="/images/medium.svg"
@@ -20,6 +18,7 @@ export default function SocialMedia() {
           link="https://twitter.com/tracywxu"
           src="/images/twitter.svg"
         />
+        <SocialMediaIcon link="#" src="/images/instagram.svg" />
       </SocialAccounts>
     </Wrapper>
   )

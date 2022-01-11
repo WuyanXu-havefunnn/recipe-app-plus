@@ -1,17 +1,13 @@
 import styled from 'styled-components'
 import React, { useState } from 'react'
-import Airtable from 'airtable'
+import { AirtableBase } from '../airtable'
 import toast from 'react-hot-toast'
-
-const base = new Airtable({ apiKey: 'keyl9Z8txJ7Jvp3Py' }).base(
-  'appHEbBjxxpZqwZFL',
-)
 
 export default function Newsletter() {
   const [email, setEmail] = useState('')
 
   const addNewEmail = () => {
-    base('signup').create(
+    AirtableBase('signup').create(
       [
         {
           fields: { email },
@@ -39,7 +35,6 @@ export default function Newsletter() {
       <EmailForm
         onSubmit={(event) => {
           event.preventDefault()
-          // console.log(email)
           addNewEmail()
           setEmail('')
         }}
