@@ -9,8 +9,8 @@ import { QUERIES } from '../lib/constants'
 export default function NavList() {
   return (
     <LinkList>
+      <NavItem filename="/" name="home" />
       <NavItem filename="/about" name="about" />
-
       <RecipeSection>
         <NavItem filename="/recipes" name="recipes" />
         <ArrowWrapper>
@@ -19,7 +19,6 @@ export default function NavList() {
           </NavItem>
         </ArrowWrapper>
       </RecipeSection>
-
       <NavItem filename="/life" name="bits of life" />
       <SearchButton />
     </LinkList>

@@ -8,7 +8,7 @@ export default function SummerRecipes() {
       <Heading>
         <HeadingName>Summer Recipes</HeadingName>
         <ReadMore>
-          <a href="#">read more 🏖</a>
+          <a href="../recipes">read more 🏖</a>
         </ReadMore>
       </Heading>
 

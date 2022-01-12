@@ -8,7 +8,7 @@ export default function RecentRecipes() {
       <Heading>
         <HeadingName>Recent Recipes</HeadingName>
         <ReadMore>
-          <a href="#">read more 🎏</a>
+          <a href="../recipes">read more 🎏</a>
         </ReadMore>
       </Heading>
 
