@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
-  padding: 60px 200px;
+  padding: 60px 180px;
 
   @media ${QUERIES.tabletAndSmaller} {
     padding: 60px 50px;

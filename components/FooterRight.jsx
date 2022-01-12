@@ -1,22 +1,24 @@
 import styled from 'styled-components'
 import { QUERIES } from '../lib/constants'
+import FooterTag from './FooterTag'
 
 export default function FooterRight() {
   return (
     <Wrapper>
       <Tagline>
-        Recipe Categories <Emoji>🦄</Emoji>
+        Check out recipes by category! <Emoji>🦄</Emoji>
       </Tagline>
       <Categories>
         <TagGroup>
-          <Tag>Vegetarian</Tag>
-          <Tag>Quick & Easy</Tag>
-          <Tag>Healthy</Tag>
+          <FooterTag link="/vegetarian" name="Vegetarian" />
+
+          <FooterTag name="Quick & Easy" />
+          <FooterTag name="Healthy" />
         </TagGroup>
         <TagGroup>
-          <Tag>Meat-eater's Love</Tag>
-          <Tag>Rice & Noodles</Tag>
-          <Tag>Sweety Sweet Things</Tag>
+          <FooterTag name="Meat-eater's Love" />
+          <FooterTag name="Rice & Noodles" />
+          <FooterTag link="/sweet" name="Sweety Sweet Things" />
         </TagGroup>
       </Categories>
     </Wrapper>
@@ -28,7 +30,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 300px;
   gap: 25px;
-  padding-top: 10px;
+  padding-top: 35px;
 
   @media ${QUERIES.tabletAndSmaller} {
     justify-content: center;
@@ -40,7 +42,8 @@ const Wrapper = styled.div`
 const Categories = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+  /* padding: 25px 0; */
   @media ${QUERIES.tabletAndSmaller} {
     gap: 40px;
   }
@@ -58,19 +61,6 @@ const TagGroup = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 15px;
-`
-
-const Tag = styled.p`
-  font-family: 'Gotu', sans-serif;
-  font-size: ${13 / 16}rem;
-  padding-right: 15px;
-  &:hover {
-    cursor: pointer;
-    color: #fa800e;
-  }
-  @media ${QUERIES.tabletAndSmaller} {
-    padding-right: 0;
-  }
 `
 
 const Emoji = styled.i`
