@@ -15,10 +15,13 @@ export default function Newsletter() {
       ],
       function (err, records) {
         if (err) {
-          toast.error(err)
+          toast.error(
+            'Oops! Something went wrong. Make sure to enter a valid email address:)',
+          )
+          console.log(err)
           return
         }
-        toast('Hi! You have successfully signed up for the newsletter!', {
+        toast('Yeah! You have successfully signed up for the newsletter!', {
           icon: '🥳',
         })
       },
