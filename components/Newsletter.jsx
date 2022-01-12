@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import React, { useState } from 'react'
-import { AirtableBase } from '../airtable'
+import { AirtableBase } from '../pages/api/airtable'
 import toast from 'react-hot-toast'
 
 export default function Newsletter() {
