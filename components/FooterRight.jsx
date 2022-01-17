@@ -11,7 +11,6 @@ export default function FooterRight() {
       <Categories>
         <TagGroup>
           <FooterTag link="/vegetarian" name="Vegetarian" />
-
           <FooterTag name="Quick & Easy" />
           <FooterTag name="Healthy" />
         </TagGroup>
@@ -43,7 +42,6 @@ const Categories = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  /* padding: 25px 0; */
   @media ${QUERIES.tabletAndSmaller} {
     gap: 40px;
   }

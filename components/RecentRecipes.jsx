@@ -26,9 +26,15 @@ export default function RecentRecipes() {
         />
 
         <RecipeItem
-          // link="/singleRecipePages/blueberryMuffins"
+          link="/singleRecipePages/broccoliBeef"
           imgSrc="/images/broccoliBeef.jpg"
-          name="broccoli beef"
+          name="The Ultimate Broccoli Beef"
+        />
+
+        <RecipeItem
+          link="/singleRecipePages/broccoliBeef"
+          imgSrc="/images/broccoliBeef.jpg"
+          name="ninja pot spicy sichuan-style beef stew"
         />
 
         <RecipeItem
@@ -40,10 +46,10 @@ export default function RecentRecipes() {
           imgSrc="https://images.unsplash.com/photo-1563104307-944928bb174a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
           name="how to make steam bun like a Chinese grandma"
         />
-        <RecipeItem
+        {/* <RecipeItem
           imgSrc="https://images.unsplash.com/photo-1542803417-f2be3270347d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80"
           name="ginger & scallion dungeness crab"
-        />
+        /> */}
       </RecipeGrid>
     </>
   )

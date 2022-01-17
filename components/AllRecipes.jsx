@@ -17,6 +17,23 @@ export default function AllRecipes() {
 
       <RecipeGrid>
         <RecipeItem
+          link="/singleRecipePages/blueberryMuffins"
+          imgSrc="/images/blueberrymuffins.JPG"
+          name="Blueberry lemon muffin bombs"
+        />
+
+        <RecipeItem
+          link="/singleRecipePages/tomatoTofu"
+          imgSrc="/images/tomatoTofu.JPG"
+          name="healthy yammy tomatooo-fu!"
+        />
+
+        <RecipeItem
+          link="/singleRecipePages/broccoliBeef"
+          imgSrc="/images/broccoliBeef.jpg"
+          name="The Ultimate Broccoli Beef"
+        />
+        <RecipeItem
           link="/life"
           imgSrc="https://images.unsplash.com/photo-1605490500023-b96e71486495?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1415&q=80"
           name="when walnuts meet chicken"
@@ -30,12 +47,6 @@ export default function AllRecipes() {
           link="/life"
           imgSrc="https://images.unsplash.com/photo-1552611052-33e04de081de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
           name="seafood udon"
-        />
-
-        <RecipeItem
-          link="/singleRecipePages/tomatoTofu"
-          imgSrc="/images/tomatoTofu.JPG"
-          name="healthy yammy tomatooo-fu!"
         />
 
         <RecipeItem
@@ -72,12 +83,6 @@ export default function AllRecipes() {
           link="/life"
           imgSrc="https://images.unsplash.com/photo-1608651274010-091503600373?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
           name="pan-fried dumplings"
-        />
-
-        <RecipeItem
-          link="/singleRecipePages/blueberryMuffins"
-          imgSrc="/images/blueberrymuffins.JPG"
-          name="Blueberry lemon muffin bombs"
         />
 
         <RecipeItem

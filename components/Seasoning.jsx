@@ -6,9 +6,9 @@ export default function Seasoning({ children }) {
       <Heading>Seasoning •••</Heading>
       <Content>{children}</Content>
       <Note>
-        You are encouraged be flexible and creative when it comes to seasoning:
-        increase or reduce the amount of certain seasoning based on your own
-        taste and preferences 🧂
+        You are encouraged be flexible and creative about seasoning your dish:
+        adjust the amount of seasoning based on your own taste and preferences
+        🧂🥄
       </Note>
     </Wrapper>
   )
@@ -33,7 +33,6 @@ const Note = styled.small`
   font-family: 'Gotu', sans-serif;
   font-size: 1rem;
   color: #cc3d01;
-  font-style: italic;
 `
 
 const Content = styled.div`

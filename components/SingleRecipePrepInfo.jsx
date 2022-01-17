@@ -57,7 +57,7 @@ const InfoWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 `
 
 const InfoName = styled.li`
