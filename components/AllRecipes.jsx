@@ -33,6 +33,18 @@ export default function AllRecipes() {
           imgSrc="/images/broccoliBeef.jpg"
           name="The Ultimate Broccoli Beef"
         />
+
+        <RecipeItem
+          link="/singleRecipePages/broccoliBeef"
+          imgSrc="/images/cornMuffin.jpg"
+          name="super healthy corn muffins"
+        />
+
+        <RecipeItem
+          imgSrc="/images/homestyleEggplant.jpg"
+          name="homestyle eggplant"
+        />
+
         <RecipeItem
           link="/life"
           imgSrc="https://images.unsplash.com/photo-1605490500023-b96e71486495?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1415&q=80"

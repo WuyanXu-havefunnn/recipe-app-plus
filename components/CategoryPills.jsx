@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import Link from 'next/link'
-import { resolveHref } from 'next/dist/next-server/lib/router/router'
 import PillButton from './PillButton'
 
 const colors = {
@@ -28,7 +26,7 @@ const colors = {
     text: '#015153',
     bg: '#c5f1f3',
   },
-  pork: {
+  spicy: {
     text: '#711617',
     bg: '#fae0e0',
   },
@@ -48,10 +46,6 @@ const colors = {
     text: '#9f1957',
     bg: '#feebf3',
   },
-  // spicy: {
-  //   text: '#9f1957',
-  //   bg: '#feebf3',
-  // },
 }
 
 export default function CategoryPills() {
@@ -65,35 +59,46 @@ export default function CategoryPills() {
         <PillButton src="/vegetarian" color={colors.vegetarian}>
           vegetarian
         </PillButton>
+
         <PillButton src="/beef" color={colors.beef}>
           beef
         </PillButton>
 
-        <Button type="button" colorScheme={colors.baking}>
+        <PillButton src="/baking" color={colors.baking}>
           baking
-        </Button>
-        <Button type="button" colorScheme={colors.healthy}>
+        </PillButton>
+
+        <PillButton src="/healthy" color={colors.healthy}>
           healthy
-        </Button>
+        </PillButton>
+
         <Button type="button" colorScheme={colors.seafood}>
           seafood
         </Button>
-        <Button type="button" colorScheme={colors.pork}>
-          pork
-        </Button>
+
+        <PillButton src="/seafood" color={colors.seafood}>
+          seafood
+        </PillButton>
+
+        <PillButton src="/spicy" color={colors.spicy}>
+          spicy
+        </PillButton>
+
         <Button type="button" colorScheme={colors.chicken}>
           chicken
         </Button>
+
         <Button type="button" colorScheme={colors.egg}>
           egg
         </Button>
+
         <Button type="button" colorScheme={colors.rice}>
           rice & noodles
         </Button>
 
-        <Link href="/sweet">
-          <Button colorScheme={colors.sweet}>sweety sweet things</Button>
-        </Link>
+        <PillButton src="/sweet" color={colors.sweet}>
+          sweety sweet things
+        </PillButton>
       </Categories>
     </Wrapper>
   )
