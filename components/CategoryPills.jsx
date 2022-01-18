@@ -87,10 +87,9 @@ export default function CategoryPills() {
         <PillButton src="/egg" color={colors.egg}>
           egg
         </PillButton>
-
-        <Button type="button" colorScheme={colors.rice}>
+        <PillButton src="/riceAndNoodles" color={colors.rice}>
           rice & noodles
-        </Button>
+        </PillButton>
 
         <PillButton src="/sweet" color={colors.sweet}>
           sweety sweet things
