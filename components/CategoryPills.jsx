@@ -80,13 +80,14 @@ export default function CategoryPills() {
           spicy
         </PillButton>
 
-        <Button type="button" colorScheme={colors.chicken}>
+        <PillButton src="/chicken" color={colors.chicken}>
           chicken
-        </Button>
+        </PillButton>
 
         <PillButton src="/egg" color={colors.egg}>
           egg
         </PillButton>
+
         <PillButton src="/riceAndNoodles" color={colors.rice}>
           rice & noodles
         </PillButton>
@@ -115,24 +116,4 @@ const Categories = styled.div`
   flex-wrap: wrap;
   width: 200px;
   gap: 10px;
-`
-
-const Button = styled.button`
-  font-family: 'Karla', sans-serif;
-  border: none;
-  font-size: 0.8rem;
-  font-weight: 600;
-  width: auto;
-  height: auto;
-  padding: 7px;
-  border-radius: 3px;
-  text-align: centers;
-  color: ${(p) => p.colorScheme.text};
-  background-color: ${(p) => p.colorScheme.bg};
-  line-height: 1.5;
-  &:hover {
-    cursor: pointer;
-    filter: brightness(105%);
-    transition: 100ms ease-out;
-  }
 `
