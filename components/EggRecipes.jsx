@@ -2,12 +2,12 @@ import RecipeGrid from './RecipeGrid'
 import RecipeItem from './RecipeItem'
 import RecipeListHeading from './RecipeListHeading'
 
-export default function SeafoodRecipes() {
+export default function EggRecipes() {
   return (
     <>
       <RecipeListHeading
-        title="Seafood Recipes"
-        intro="Just  🐟  imagine  🦐  you're swimming  🐙  in the vast  🐚  blue  🐠  ocean  🦞  and surrounded  🦀  by many fairies 🦑 of the sea  🌊..."
+        title="Egg Recipes"
+        intro="Once upon a time in the Kingdom of Egg... 🥚🥚🥚"
       />
 
       <RecipeGrid>

@@ -84,9 +84,9 @@ export default function CategoryPills() {
           chicken
         </Button>
 
-        <Button type="button" colorScheme={colors.egg}>
+        <PillButton src="/egg" color={colors.egg}>
           egg
-        </Button>
+        </PillButton>
 
         <Button type="button" colorScheme={colors.rice}>
           rice & noodles

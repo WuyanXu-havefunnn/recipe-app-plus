@@ -7,7 +7,7 @@ export default function SpicyRecipes() {
     <>
       <RecipeListHeading
         title="Spicy Recipes"
-        intro="Feeling little bland in life? Let's cure it with some spicy spicy food! 🌶"
+        intro="Feeling a bit bland in life? Let's cure you with some spicy spicy food! 🌶"
       />
 
       <RecipeGrid>
