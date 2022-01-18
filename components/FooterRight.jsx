@@ -11,12 +11,12 @@ export default function FooterRight() {
       <Categories>
         <TagGroup>
           <FooterTag link="/vegetarian" name="Vegetarian" />
-          <FooterTag name="Quick & Easy" />
-          <FooterTag name="Healthy" />
+          <FooterTag link="/quick" name="Quick & Easy" />
+          <FooterTag link="/healthy" name="Healthy" />
         </TagGroup>
         <TagGroup>
-          <FooterTag name="Meat-eater's Love" />
-          <FooterTag name="Rice & Noodles" />
+          <FooterTag link="/beef" name="Meat-eater's Love" />
+          <FooterTag link="/riceAndNoodles" name="Rice & Noodles" />
           <FooterTag link="/sweet" name="Sweety Sweet Things" />
         </TagGroup>
       </Categories>
