@@ -72,10 +72,6 @@ export default function CategoryPills() {
           healthy
         </PillButton>
 
-        <Button type="button" colorScheme={colors.seafood}>
-          seafood
-        </Button>
-
         <PillButton src="/seafood" color={colors.seafood}>
           seafood
         </PillButton>
