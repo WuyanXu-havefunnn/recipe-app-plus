@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 import { resolveHref } from 'next/dist/next-server/lib/router/router'
+import PillButton from './PillButton'
 
 const colors = {
   vegetarian: {
@@ -58,15 +59,16 @@ export default function CategoryPills() {
     <Wrapper>
       <Tagline>Top Categories</Tagline>
       <Categories>
-        <Link href="/vegetarian">
-          <Button colorScheme={colors.vegetarian}>vegetarian</Button>
-        </Link>
-        <Button type="button" colorScheme={colors.quick}>
+        <PillButton src="/quick" color={colors.quick}>
           quick & easy
-        </Button>
-        <Button type="button" colorScheme={colors.beef}>
+        </PillButton>
+        <PillButton src="/vegetarian" color={colors.vegetarian}>
+          vegetarian
+        </PillButton>
+        <PillButton src="/beef" color={colors.beef}>
           beef
-        </Button>
+        </PillButton>
+
         <Button type="button" colorScheme={colors.baking}>
           baking
         </Button>

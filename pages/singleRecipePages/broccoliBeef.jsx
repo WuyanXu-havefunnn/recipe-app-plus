@@ -48,11 +48,7 @@ export default function BroccoliBeef() {
           <IngredientItem name="olive oil 橄榄油" measurement="2 tbsp" />
           <IngredientItem name="soy sauce 生抽" measurement="1 tbsp" />
           <IngredientItem name="oyster sauce 蚝油" measurement="1 tbsp" />
-          <IngredientItem
-            name="dark soy sauce 老抽"
-            measurement="1 tsp"
-            notes="to color our beef"
-          />
+          <IngredientItem name="dark soy sauce 老抽" measurement="1 tsp" />
           <IngredientItem
             name="freshly ground black pepper 黑胡椒"
             measurement="1 tsp"
@@ -93,12 +89,11 @@ export default function BroccoliBeef() {
           <Instuction>
             Let's marinate the beef! Add the following seasonings into the
             mixing bowl that we used to put sliced beef: 1/2 tbsp soy sauce, 1/2
-            tbsp oyster sauce, 1 tsp dark soy sauce, 1 tsp ground ginger, 1 tsp
-            ground sichuan pepper, 1 tsp freshly ground pepper, 2 tsp corn
-            starch, 1/4 tsp of baking soda. Mix well with the beef and marinate
-            for 15 minutes.
+            tbsp oyster sauce, 1 tsp dark soy sauce, 1 tbsp olive oil, 1 tsp
+            ground ginger, 1 tsp ground sichuan pepper, 1 tsp freshly ground
+            pepper, 2 tsp corn starch, 1/4 tsp of baking soda. Mix well with the
+            beef and marinate for 15 minutes.
           </Instuction>
-
           <Instuction>
             While marinating the beef with magic seasonings, slice 5 cloves
             garlic and a small chunk of ginger (about 1 tbsp).
@@ -119,12 +114,20 @@ export default function BroccoliBeef() {
             half done. Try not to overcook the beef in this step.
           </Instuction>
           <Instuction>
+            Take 2 tsp of corn starch and mix it with 3 tbsp of tap water and 1
+            tbsp of soy sauce. This mixed sauce will later give the broccoli and
+            beef a nice coat.
+          </Instuction>
+          <Instuction>
             Using the same wok and the oil left in it, let's put some sliced
             garlic and ginger in. Stir fry the garlic and ginger for about 30
-            seconds with medium heat. Fry the broccoli for 30 seconds with high
-            heat. Put the beef and 1 tbsp of soy sauce in. Passionately mix and
-            stir everything in the pot together for another 30 seconds. Wola,
-            you're done!
+            seconds with medium heat. Pour the corn starch water in and stir. It
+            should thicken very quickly.
+          </Instuction>
+          <Instuction>
+            Add broccoli to thw wok and fry the broccoli for 30 seconds with
+            high heat. Add the beef in. Passionately mix and stir everything in
+            the pot together for another 30 seconds. Wola, you're done!
           </Instuction>
           <Instuction>
             Enjoy your hard work when it's still hot! It's so yummy with a bowl

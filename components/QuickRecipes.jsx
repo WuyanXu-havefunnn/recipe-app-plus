@@ -1,15 +1,13 @@
-import styled from 'styled-components'
 import RecipeGrid from './RecipeGrid'
 import RecipeItem from './RecipeItem'
 import RecipeListHeading from './RecipeListHeading'
 
-export default function DessertRecipes() {
+export default function QuickRecipes() {
   return (
     <>
       <RecipeListHeading
-        title="Dessert Recipes"
-        intro="Stressed is dessert spelled backwards! Let's enjoy some sweetness in
-          life here!"
+        title="Quick & Easy Recipes"
+        intro="Running short of time cooking? Let's make something quick, easy, and tasty happen in no time! 💨"
       />
 
       <RecipeGrid>
@@ -20,9 +18,9 @@ export default function DessertRecipes() {
         />
 
         <RecipeItem
-          link="/singleRecipePages/broccoliBeef"
-          imgSrc="/images/cornMuffin.jpg"
-          name="super healthy corn muffins"
+          link="/singleRecipePages/tomatoTofu"
+          imgSrc="/images/tomatoTofu.JPG"
+          name="healthy yammy tomatooo-fu!"
         />
       </RecipeGrid>
     </>

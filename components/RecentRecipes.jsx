@@ -38,14 +38,14 @@ export default function RecentRecipes() {
         />
 
         <RecipeItem
-          imgSrc="/images/homestyleEggplant.jpg"
-          name="homestyle eggplant"
-        />
-
-        <RecipeItem
           link="/singleRecipePages/broccoliBeef"
           imgSrc="/images/cornMuffin.jpg"
           name="super healthy corn muffins"
+        />
+
+        <RecipeItem
+          imgSrc="/images/homestyleEggplant.jpg"
+          name="homestyle eggplant"
         />
 
         {/* <RecipeItem
