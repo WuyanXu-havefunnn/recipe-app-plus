@@ -1,20 +1,20 @@
 import styled from 'styled-components'
-import SingleRecipeLayout from '../../components/SingleRecipeLayout'
-import SingleRecipeHeading from '../../components/SingleRecipeHeading'
-import { QUERIES } from '../../lib/constants'
-import ImageFullSize from '../../components/ImageFullSize'
-import SingleRecipePrepInfo from '../../components/SingleRecipePrepInfo'
-import IngredientSection from '../../components/IngredientSection'
-import DryIngredients from '../../components/DryIngredients'
-import IngredientItem from '../../components/IngredientItem'
-import WetIngredients from '../../components/WetIngredients'
-import SingleRecipeInstuctions from '../../components/SingleRecipeInstructions'
-import InstructionList from '../../components/InstructionList'
-import Instuction from '../../components/Instruction'
+import SingleRecipeLayout from './SingleRecipeLayout'
+import SingleRecipeHeading from './SingleRecipeHeading'
+import { QUERIES } from '../lib/constants'
+import ImageFullSize from './ImageFullSize'
+import SingleRecipePrepInfo from './SingleRecipePrepInfo'
+import IngredientSection from './IngredientSection'
+import DryIngredients from './DryIngredients'
+import IngredientItem from './IngredientItem'
+import WetIngredients from './WetIngredients'
+import SingleRecipeInstuctions from './SingleRecipeInstructions'
+import InstructionList from './InstructionList'
+import Instuction from './Instruction'
 
 export default function BlueberryMuffins() {
   return (
-    <SingleRecipeLayout>
+    <>
       <SingleRecipeHeading
         title="Refreshing Blueberry Lemon Muffin Bombs"
         postDate="July 27, 2021"
@@ -97,6 +97,6 @@ export default function BlueberryMuffins() {
           </Instuction>
         </InstructionList>
       </SingleRecipeInstuctions>
-    </SingleRecipeLayout>
+    </>
   )
 }

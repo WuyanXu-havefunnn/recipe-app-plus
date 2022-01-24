@@ -2,9 +2,7 @@ import styled from 'styled-components'
 import React, { useState } from 'react'
 import { QUERIES } from '../lib/constants'
 
-export default function NavItem(props) {
-  const [open, setOpen] = useState(false) // call the useState() function, returns an array, we can destructure the array; the first value is a boolean value (state); the second value is a function used to change the state
-
+export default function NavItem({ name, route, isSelected }) {
   // // using setState (can only be used in class component´)
   // this.state = {
   //   name: '',
@@ -25,11 +23,9 @@ export default function NavItem(props) {
   return (
     //   when clicked, it will envoke the setOpen() function we got from useState, and it will flip the open value to the opposite of whatever it currently is (the user can toggle the state on and off)
 
-    <ListItem>
-      <ItemName href={props.filename} onClick={() => setOpen((open) => !open)}>
-        {props.name}
-      </ItemName>
-      {open && props.children}
+    <ListItem isSelected={isSelected}>
+      <ItemName href={route}>{name}</ItemName>
+      {/* {open && props.children} */}
       {/* if the open state is true, we will show its children; if not, nothing will be showed here */}
     </ListItem>
   )
@@ -37,7 +33,8 @@ export default function NavItem(props) {
 
 const ListItem = styled.li`
   font-family: 'Benne', serif;
-  color: #6b5b48;
+  /* color: #6b5b48; */
+  color: ${({ isSelected }) => (isSelected ? `#f89c46` : `#6b5b48`)};
   font-weight: 400;
   font-size: ${22 / 16}rem;
   letter-spacing: 1px;

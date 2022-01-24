@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import Link from 'next/dist/client/link'
+import React, { useState } from 'react'
 
-export default function PillButton({ color, children, src }) {
+export default function PillButton({ color, name, onClick, isSelected }) {
   return (
-    <Link href={src}>
-      <Button colorScheme={color}>{children}</Button>
-    </Link>
+    <Button colorScheme={color} onClick={onClick} isSelected={isSelected}>
+      {name}
+    </Button>
   )
 }
 
@@ -27,4 +27,5 @@ const Button = styled.button`
     filter: brightness(105%);
     transition: 100ms ease-out;
   }
+  border: ${({ isSelected }) => (isSelected ? `2px dotted violet` : `none`)};
 `

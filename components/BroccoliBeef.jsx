@@ -1,20 +1,18 @@
-import styled from 'styled-components'
-import SingleRecipeLayout from '../../components/SingleRecipeLayout'
-import SingleRecipeHeading from '../../components/SingleRecipeHeading'
-import { QUERIES } from '../../lib/constants'
-import ImageFullSize from '../../components/ImageFullSize'
-import SingleRecipePrepInfo from '../../components/SingleRecipePrepInfo'
-import IngredientSection from '../../components/IngredientSection'
-import IngredientItem from '../../components/IngredientItem'
-import SingleRecipeInstuctions from '../../components/SingleRecipeInstructions'
-import InstructionList from '../../components/InstructionList'
-import Instuction from '../../components/Instruction'
-import Seasoning from '../../components/Seasoning'
-import GeneralIngredient from '../../components/GeneralIngredient'
+// import SingleRecipeLayout from '../../components/SingleRecipeLayout'
+import SingleRecipeHeading from './SingleRecipeHeading'
+import ImageFullSize from './ImageFullSize'
+import SingleRecipePrepInfo from './SingleRecipePrepInfo'
+import IngredientSection from './IngredientSection'
+import IngredientItem from './IngredientItem'
+import SingleRecipeInstuctions from './SingleRecipeInstructions'
+import InstructionList from './InstructionList'
+import Instuction from './Instruction'
+import Seasoning from './Seasoning'
+import GeneralIngredient from './GeneralIngredient'
 
 export default function BroccoliBeef() {
   return (
-    <SingleRecipeLayout>
+    <>
       <SingleRecipeHeading
         title="The Ultimate Broccoli Beef"
         postDate="Jan 17, 2022"
@@ -135,6 +133,6 @@ export default function BroccoliBeef() {
           </Instuction>
         </InstructionList>
       </SingleRecipeInstuctions>
-    </SingleRecipeLayout>
+    </>
   )
 }

@@ -3,13 +3,14 @@ import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 import { QUERIES } from '../lib/constants'
+import CategoryPills from './CategoryPills'
 
 export default function Layout({ children, alignment }) {
   return (
     <>
       <Header />
       <Wrapper alignment={alignment}>
-        <Main>{children}</Main>
+        <RecipesSection>{children}</RecipesSection>
         <Sidebar />
       </Wrapper>
       <Footer />
@@ -35,7 +36,7 @@ const Wrapper = styled.div`
     padding: 45px;
   }
 `
-const Main = styled.main`
+const RecipesSection = styled.main`
   padding-right: 60px;
   flex: 1;
   @media ${QUERIES.tabletAndSmaller} {

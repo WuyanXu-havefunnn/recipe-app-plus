@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 import PillButton from './PillButton'
+import React, { useState } from 'react'
 
-const colors = {
+export const colors = {
+  all: {
+    text: '#004b23',
+    bg: '#e9fdaa',
+  },
   vegetarian: {
     text: '#0b4727',
     bg: '#d0ecdd',
@@ -48,72 +53,103 @@ const colors = {
   },
 }
 
-export default function CategoryPills() {
+export default function CategoryPills({ onChangeTag, currentTag }) {
   return (
-    <Wrapper>
-      <Tagline>Top Categories</Tagline>
-      <Categories>
-        <PillButton src="/quick" color={colors.quick}>
-          quick & easy
-        </PillButton>
-        <PillButton src="/vegetarian" color={colors.vegetarian}>
-          vegetarian
-        </PillButton>
+    <Categories>
+      <PillButton
+        color={colors.all}
+        name="all"
+        onClick={() => onChangeTag('all')}
+        isSelected={currentTag === 'all'}
+      />
 
-        <PillButton src="/beef" color={colors.beef}>
-          beef
-        </PillButton>
+      <PillButton
+        color={colors.vegetarian}
+        name="vegetarian"
+        onClick={() => onChangeTag('vegetarian')}
+        isSelected={currentTag === 'vegetarian'}
+      />
 
-        <PillButton src="/baking" color={colors.baking}>
-          baking
-        </PillButton>
+      <PillButton
+        color={colors.rice}
+        name="noodles"
+        onClick={() => onChangeTag('noodles')}
+        isSelected={currentTag === 'noodles'}
+      />
 
-        <PillButton src="/healthy" color={colors.healthy}>
-          healthy
-        </PillButton>
+      <PillButton
+        color={colors.healthy}
+        name="healthy"
+        onClick={() => onChangeTag('healthy')}
+        isSelected={currentTag === 'healthy'}
+      />
 
-        <PillButton src="/seafood" color={colors.seafood}>
-          seafood
-        </PillButton>
+      <PillButton
+        color={colors.baking}
+        name="baking"
+        onClick={() => onChangeTag('baking')}
+        isSelected={currentTag === 'baking'}
+      />
 
-        <PillButton src="/spicy" color={colors.spicy}>
-          spicy
-        </PillButton>
+      <PillButton
+        color={colors.beef}
+        name="beef"
+        onClick={() => onChangeTag('beef')}
+        isSelected={currentTag === 'beef'}
+      />
 
-        <PillButton src="/chicken" color={colors.chicken}>
-          chicken
-        </PillButton>
+      <PillButton
+        color={colors.seafood}
+        name="seafood"
+        onClick={() => onChangeTag('seafood')}
+        isSelected={currentTag === 'seafood'}
+      />
 
-        <PillButton src="/egg" color={colors.egg}>
-          egg
-        </PillButton>
+      <PillButton
+        color={colors.spicy}
+        name="spicy"
+        onClick={() => onChangeTag('spicy')}
+        isSelected={currentTag === 'spicy'}
+      />
+      <PillButton
+        color={colors.chicken}
+        name="chicken"
+        onClick={() => onChangeTag('chicken')}
+        isSelected={currentTag === 'chicken'}
+      />
+      <PillButton
+        color={colors.egg}
+        name="egg"
+        onClick={() => onChangeTag('egg')}
+        isSelected={currentTag === 'egg'}
+      />
+      <PillButton
+        color={colors.quick}
+        name="quick & easy"
+        onClick={() => onChangeTag('quick')}
+        isSelected={currentTag === 'quick'}
+      />
 
-        <PillButton src="/riceAndNoodles" color={colors.rice}>
-          rice & noodles
-        </PillButton>
+      <PillButton
+        color={colors.rice}
+        name="rice"
+        onClick={() => onChangeTag('rice')}
+        isSelected={currentTag === 'rice'}
+      />
 
-        <PillButton src="/sweet" color={colors.sweet}>
-          sweety sweet things
-        </PillButton>
-      </Categories>
-    </Wrapper>
+      <PillButton
+        color={colors.sweet}
+        name="sweety sweet things"
+        onClick={() => onChangeTag('sweet')}
+        isSelected={currentTag === 'sweet'}
+      />
+    </Categories>
   )
 }
-
-const Wrapper = styled.aside`
-  width: 200px;
-`
-
-const Tagline = styled.h3`
-  font-family: 'Benne', serif;
-  font-size: 1rem;
-  margin: 50px 0 10px 0;
-  letter-spacing: 0.5px;
-`
 
 const Categories = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
-  gap: 10px;
+  gap: 20px;
+  margin-bottom: 35px;
 `

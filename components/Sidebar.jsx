@@ -12,7 +12,7 @@ export default function Sidebar() {
       <AboutMe />
       <Newsletter />
       <SocialMedia />
-      <CategoryPills />
+      {/* <CategoryPills /> */}
     </Wrapper>
   )
 }

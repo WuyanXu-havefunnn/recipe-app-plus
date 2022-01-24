@@ -10,7 +10,6 @@ export default function SingleRecipeLayout({ children }) {
       <MaxWidthWrapper>
         <Main>{children}</Main>
       </MaxWidthWrapper>
-
       <Footer />
     </Wrapper>
   )

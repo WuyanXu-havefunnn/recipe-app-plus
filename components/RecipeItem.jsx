@@ -1,20 +1,40 @@
 import styled from 'styled-components'
+import React from 'react'
 
-export default function RecipeItem({ link, imgSrc, name }) {
+// const RecipeItem = React.forwardRef(({ href, imgSrc, name }, ref) => {
+//   return (
+//     <a href={href} ref={ref}>
+//       <Wrapper>
+//         <DishPic imgSrc={imgSrc}></DishPic>
+//         <DishName>{name}</DishName>
+//       </Wrapper>
+//     </a>
+//   )
+// })
+
+// const RecipeItem = React.forwardRef(({ href, imgSrc, name }, ref) => {
+//   return (
+//     <a href={href} ref={ref}>
+//       <Wrapper>
+//         <DishPic imgSrc={imgSrc}></DishPic>
+//         <DishName>{name}</DishName>
+//       </Wrapper>
+//     </a>
+//   )
+// })
+
+export default function RecipeItem({ imgSrc, name }) {
   return (
-    <a href={link}>
-      <Wrapper>
-        <DishPic imgSrc={imgSrc}></DishPic>
-        <DishName>{name}</DishName>
-      </Wrapper>
-    </a>
+    <Wrapper>
+      <DishPic imgSrc={imgSrc}></DishPic>
+      <DishName>{name}</DishName>
+    </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* background-color: lightblue; */
   height: 300px;
 `
 
@@ -24,6 +44,7 @@ const DishPic = styled.div`
   flex: 1;
   background-size: cover;
   background-repeat: no-repeat;
+  /* border-radius: 5px; */
   &:hover {
     cursor: pointer;
   }
@@ -49,3 +70,5 @@ const DishName = styled.h3`
     color: #e91e6b;
   }
 `
+
+// export default RecipeItem

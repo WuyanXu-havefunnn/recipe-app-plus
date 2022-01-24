@@ -1,24 +1,23 @@
 import styled from 'styled-components'
-import SingleRecipeLayout from '../../components/SingleRecipeLayout'
-import SingleRecipeHeading from '../../components/SingleRecipeHeading'
-import { QUERIES } from '../../lib/constants'
-import ImageFullSize from '../../components/ImageFullSize'
-import SingleRecipePrepInfo from '../../components/SingleRecipePrepInfo'
-import IngredientSection from '../../components/IngredientSection'
-import IngredientItem from '../../components/IngredientItem'
-import SingleRecipeInstuctions from '../../components/SingleRecipeInstructions'
-import InstructionList from '../../components/InstructionList'
-import Instuction from '../../components/Instruction'
-import Seasoning from '../../components/Seasoning'
-import GeneralIngredient from '../../components/GeneralIngredient'
+import SingleRecipeLayout from './SingleRecipeLayout'
+import SingleRecipeHeading from './SingleRecipeHeading'
+import ImageFullSize from './ImageFullSize'
+import SingleRecipePrepInfo from './SingleRecipePrepInfo'
+import IngredientSection from './IngredientSection'
+import IngredientItem from './IngredientItem'
+import SingleRecipeInstuctions from './SingleRecipeInstructions'
+import InstructionList from './InstructionList'
+import Instuction from './Instruction'
+import Seasoning from './Seasoning'
+import GeneralIngredient from './GeneralIngredient'
 
 export default function TomatoTofu() {
   return (
-    <SingleRecipeLayout>
+    <>
       <SingleRecipeHeading
         title="healthy yammy Tomatooo-fu!"
         postDate="July 30, 2021"
-        intro="Have you ever thought of what magical sparks would happen when tomatoes meet tofu? All I can tell you is that it is a dish that goes with anything-- bread, rice, noodles, oatmeal... It's so healthy, flavory, and easy!"
+        intro="Have you ever thought of what magical sparks would happen when tomatoes meet tofu? All I can tell you is that it is a dish that goes with anything-- bread, rice, noodles, oatmeal... It's so healthy, flavory, fun and easy!"
       />
 
       <ImageFullSize imageSrc="/images/tomatoTofu.JPG" />
@@ -100,6 +99,6 @@ export default function TomatoTofu() {
           </Instuction>
         </InstructionList>
       </SingleRecipeInstuctions>
-    </SingleRecipeLayout>
+    </>
   )
 }
