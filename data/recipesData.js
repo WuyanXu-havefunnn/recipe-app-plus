@@ -12,6 +12,7 @@ export const recipesData = [
     photoUrl: '/images/broccoliBeef.jpg',
     tags: ['beef', 'healthy'],
     slug: 'broccoli-beef',
+    tagline: 'A symphony of silky beef and crunchy broccoli.',
     component: BroccoliBeef,
   },
   {
@@ -19,6 +20,7 @@ export const recipesData = [
     photoUrl: '/images/homestyleEggplant.jpg',
     tags: ['vegetarian', 'easy'],
     slug: 'homestyle-eggplant',
+    tagline: 'A little sweet, a little tangy, melts in your mouth.',
     component: HomestyleEggplants,
   },
   {
@@ -26,6 +28,7 @@ export const recipesData = [
     photoUrl: '/images/blueberrymuffins.JPG',
     tags: ['baking', 'sweet', 'quick'],
     slug: 'blueberry-lemon-muffin-bombs',
+    tagline: 'Pillowy muffin with warm blueberry explosions.',
     component: BlueberryMuffins,
   },
   {
@@ -33,6 +36,7 @@ export const recipesData = [
     photoUrl: '/images/tomatoTofu.JPG',
     tags: ['vegetarian', 'healthy', 'quick', 'easy'],
     slug: 'tomato-tofu',
+    tagline: 'Hearty tomato and tofu stew with a kick.',
     component: TomatoTofu,
   },
   {
@@ -40,6 +44,7 @@ export const recipesData = [
     photoUrl: '/images/cornMuffin.jpg',
     tags: ['vegetarian', 'healthy', 'quick', 'easy', 'sweet', 'baking'],
     slug: 'healthy-corn-muffins',
+    tagline: "Mom's muffins and grandma's cornbread all in one!",
     component: CornMuffins,
   },
   {
@@ -47,13 +52,15 @@ export const recipesData = [
     photoUrl: '/images/spicyBeefStew.jpg',
     tags: ['beef', 'spicy', 'quick'],
     slug: 'ninja-pot-spicy-sichuan-style-beef-stew',
+    tagline: 'A numbing, firey, pleasing tastebud assault.',
     component: NinjaPotSpicyBeef,
   },
   {
-    title: 'green power fried chicken',
+    title: 'Mrs. pepper and Mr. chicken',
     photoUrl: '/images/greenPepperFriedChicken.jpg',
     tags: ['chicken', 'spicy', 'quick'],
     slug: 'green-pepper-fried-chicken',
+    tagline: 'An unlikely couple makes magic when they meet.',
     component: GreenPepperFriedChicken,
   },
   // belows are placeholder recipes
@@ -188,7 +195,7 @@ export const headingWithTag = {
   seafood: {
     name: 'Seafood Recipes',
     intro:
-      'Just  🐟  imagine  🦐  you are swimming  🐙  in the vast  🐚  blue  🐠  ocean  🦞  and surrounded  🦀  by many fairies 🦑 of the sea  🌊...',
+      'Just 🐟  imagine  🦐  you are swimming  🐙  in the vast  🐚  blue  🐠  ocean  🦞  and surrounded  🦀  by many fairies 🦑 of the sea  🌊...',
   },
   beef: { name: 'Beef Recipes', intro: 'The moo of mystery... 🐮' },
   sweet: {
@@ -228,8 +235,8 @@ export const headingWithTag = {
   },
 
   all: {
-    name: 'All Recipes',
+    name: "Wuyan's Recipes",
     intro:
-      'What makes a great home-cooked dish? Probably all you need is a pinch of joy, a squeeze of love, and a zest of improvision. You can make all of the dishes you want in this freestyle recipe, come and have fun cooking!',
+      "What makes a great home-cooked dish? All you need is a pinch of joy, a squeeze of love, and a bit of improvisation! Make all the dishes you want in this freestyle recipe book, let's have some fun cooking!",
   },
 }

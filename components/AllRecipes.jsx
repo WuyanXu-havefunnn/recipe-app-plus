@@ -7,6 +7,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import CategoryPills from './CategoryPills'
 import RecipesPageHeading from './RecipesPageHeading'
+import styled from 'styled-components'
 
 export default function AllRecipes() {
   const [currentTag, setCurrentTag] = useState('all')
@@ -32,27 +33,31 @@ export default function AllRecipes() {
 }
 
 function RecipesWithTag({ tag }) {
+  const recipes =
+    tag === 'all'
+      ? recipesData
+      : recipesData.filter(({ tags }) => tags.includes(tag))
+
   return (
     <>
       <RecipeGrid>
-        {tag === 'all'
-          ? recipesData.map(({ title, photoUrl, slug }) => (
-              <Link key={slug} href={`/recipes/${slug}`}>
-                <a>
-                  <RecipeItem imgSrc={photoUrl} name={title} />
-                </a>
-              </Link>
-            ))
-          : recipesData
-              .filter(({ tags }) => tags.includes(tag))
-              .map(({ title, photoUrl, slug }) => (
-                <Link key={slug} href={`/recipes/${slug}`}>
-                  <a>
-                    <RecipeItem imgSrc={photoUrl} name={title} />
-                  </a>
-                </Link>
-              ))}
+        {recipes.length ? (
+          recipes.map(({ slug, photoUrl, title, tagline }) => (
+            <Link key={slug} href={`/recipes/${slug}`}>
+              <a>
+                <RecipeItem imgSrc={photoUrl} name={title} tagline={tagline} />
+              </a>
+            </Link>
+          ))
+        ) : (
+          <Msg>Recipes are coming soon 🏋️‍♀️</Msg>
+        )}
       </RecipeGrid>
     </>
   )
 }
+
+const Msg = styled.p`
+  font-family: 'Karla', sans-serif;
+  font-size: ${18 / 16}rem;
+`

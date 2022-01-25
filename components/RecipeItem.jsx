@@ -23,11 +23,12 @@ import React from 'react'
 //   )
 // })
 
-export default function RecipeItem({ imgSrc, name }) {
+export default function RecipeItem({ imgSrc, name, tagline }) {
   return (
     <Wrapper>
       <DishPic imgSrc={imgSrc}></DishPic>
       <DishName>{name}</DishName>
+      <Tagline>{tagline || 'This will blow your mind.'}</Tagline>
     </Wrapper>
   )
 }
@@ -35,7 +36,11 @@ export default function RecipeItem({ imgSrc, name }) {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 400px;
+  padding: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 2px 4px 8px hsl(0deg 0% 0% / 0.15);
 `
 
 const DishPic = styled.div`
@@ -44,6 +49,9 @@ const DishPic = styled.div`
   flex: 1;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-top: -24px;
   /* border-radius: 5px; */
   &:hover {
     cursor: pointer;
@@ -51,17 +59,16 @@ const DishPic = styled.div`
 `
 
 const DishName = styled.h3`
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: ${18 / 16}rem;
-  font-weight: 400;
-  text-align: center;
+  /* font-family: 'Alegreya Sans SC', sans-serif; */
+  font-family: 'Gotu', sans-serif;
+  font-size: ${20 / 16}rem;
+  font-weight: 700;
+  margin-top: 24px;
+  /* text-align: center; */
   overflow-wrap: break-word;
   hyphens: auto;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  height: 48px;
   text-transform: capitalize;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
   line-height: 1.5;
   &:hover {
@@ -69,6 +76,14 @@ const DishName = styled.h3`
     /* color: #e049fe; */
     color: #e91e6b;
   }
+`
+
+const Tagline = styled.p`
+  margin-top: 6px;
+  /* font-family: 'Karla', sans-serif; */
+  color: gray;
+  font-weight: 300;
+  line-height: 1.5;
 `
 
 // export default RecipeItem

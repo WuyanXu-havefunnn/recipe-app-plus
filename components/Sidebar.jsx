@@ -9,7 +9,7 @@ import { QUERIES } from '../lib/constants'
 export default function Sidebar() {
   return (
     <Wrapper>
-      <AboutMe />
+      {/* <AboutMe /> */}
       <Newsletter />
       <SocialMedia />
       {/* <CategoryPills /> */}

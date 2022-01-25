@@ -36,7 +36,7 @@ const ListItem = styled.li`
   /* color: #6b5b48; */
   color: ${({ isSelected }) => (isSelected ? `#f89c46` : `#6b5b48`)};
   font-weight: 400;
-  font-size: ${22 / 16}rem;
+  font-size: ${24 / 16}rem;
   letter-spacing: 1px;
   text-decoration: none;
 

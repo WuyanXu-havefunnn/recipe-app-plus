@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export default function RecipesPageHeading({ intro, name }) {
   return (
     <Heading>
-      <HeadingName> {name} </HeadingName>
-      <Intro> {intro} </Intro>
+      <HeadingName>{name}</HeadingName>
+      <Intro>{intro}</Intro>
     </Heading>
   )
 }
@@ -17,17 +17,18 @@ const Heading = styled.div`
 `
 
 const HeadingName = styled.h1`
-  font-family: 'Benne', serif;
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-family: 'Gotu', sans-serif;
+  font-size: ${24 / 16}rem;
+  font-weight: 700;
   letter-spacing: 1px;
-  padding-bottom: 10px;
   line-height: 1.5;
+  margin-bottom: 20px;
 `
 
 const Intro = styled.p`
-  font-family: 'Gotu', sans-serif;
-  font-size: ${14 / 16}rem;
+  font-family: 'Karla', sans-serif;
+  color: gray;
+  font-size: ${18 / 16}rem;
   margin-bottom: 20px;
-  line-height: 1.7;
+  line-height: 1.5;
 `

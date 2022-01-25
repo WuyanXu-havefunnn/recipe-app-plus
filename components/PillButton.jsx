@@ -3,21 +3,31 @@ import React, { useState } from 'react'
 
 export default function PillButton({ color, name, onClick, isSelected }) {
   return (
-    <Button colorScheme={color} onClick={onClick} isSelected={isSelected}>
-      {name}
+    <Button isSelected={isSelected}>
+      <Inner colorScheme={color} onClick={onClick}>
+        {name}
+      </Inner>
     </Button>
   )
 }
 
 const Button = styled.button`
+  border: none;
+  border-radius: 6px;
+  border: ${({ isSelected }) => (isSelected ? `2px dashed violet` : `none`)};
+  padding: 3px;
+  box-shadow: none;
+  background-color: transparent;
+`
+
+const Inner = styled.div`
   font-family: 'Karla', sans-serif;
   border: none;
-  font-size: 0.8rem;
   font-weight: 600;
   width: auto;
   height: auto;
   padding: 7px;
-  border-radius: 3px;
+  border-radius: 4px;
   text-align: centers;
   color: ${({ colorScheme }) => colorScheme.text};
   background-color: ${({ colorScheme }) => colorScheme.bg};
@@ -27,5 +37,4 @@ const Button = styled.button`
     filter: brightness(105%);
     transition: 100ms ease-out;
   }
-  border: ${({ isSelected }) => (isSelected ? `2px dotted violet` : `none`)};
 `
