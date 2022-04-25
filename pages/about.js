@@ -40,7 +40,7 @@ const ImageWrapper = styled.div`
   width: 100%;
 
   @media ${QUERIES.tabletAndSmaller} {
-    padding: 0px;
+    padding: 15px;
     padding-bottom: 20px;
   }
 `

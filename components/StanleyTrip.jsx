@@ -61,6 +61,7 @@ const Images = styled.div`
 
 const Image = styled.img`
   width: 32%;
+  border-radius: 10px;
 
   @media ${QUERIES.tabletAndSmaller} {
     width: 100%;
